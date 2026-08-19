@@ -17,6 +17,10 @@
   overflow: hidden;
   flex: 1;
   border-radius: 0.75rem;
+  /* isola o viewport na própria camada de composição para o overflow:hidden
+     recortar corretamente os cards com perspective/3D (bug conhecido em Safari/Chrome) */
+  transform: translateZ(0);
+  isolation: isolate;
 }
 
 .carousel-track {
@@ -164,6 +168,10 @@
   margin-bottom: 1rem;
   font-size: 0.95rem;
   color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-tags {
@@ -249,7 +257,7 @@
   }
 
   .project-card {
-    height: 280px;
+    height: 320px;
   }
 
   .carousel-arrow {

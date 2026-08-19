@@ -28,7 +28,7 @@ export default function Projects() {
       demo: 'https://bikecraft-github-io.vercel.app/'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Euro Wine Experience',
       description: 'Vitrine digital para experiências enogastronômicas com design premium, animações suaves e galeria interativa',
       tags: ['React', 'Vite', 'Animações', 'Design Premium'],
@@ -36,7 +36,7 @@ export default function Projects() {
       demo: 'https://eurowineexperience.vercel.app/'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Ygor Azevedo Nutri',
       description: 'Plataforma completa para nutricionista com seções de planos alimentares, depoimentos de pacientes e formulário de contato',
       tags: ['JavaScript', 'Bootstrap', 'Responsivo', 'Forms'],
@@ -44,7 +44,7 @@ export default function Projects() {
       demo: 'https://ygorazevedo.vercel.app/'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Glamuor Flor Salão',
       description: 'Landing page de alta conversão para salão de beleza com catálogo de serviços, preços e botão de agendamento direto',
       tags: ['Landing Page', 'CSS3', 'Conversão', 'Mobile First'],
@@ -52,7 +52,7 @@ export default function Projects() {
       demo: 'https://glamuorflor-landing-page.vercel.app/'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Elias Lanches',
       description: 'Cardápio digital interativo com categorias, fotos dos pratos e integração para pedidos via WhatsApp',
       tags: ['Cardápio Digital', 'WhatsApp API', 'Mobile First', 'UI/UX'],
@@ -60,7 +60,7 @@ export default function Projects() {
       demo: 'https://elias-lanches.ola.click/'
     },
     {
-      id: 7,
+      id: 8,
       title: 'Landing Page Ygor Azevedo',
       description: 'Página de captura com copy persuasiva, CTA estratégicos, prova social e design focado em conversão de leads',
       tags: ['React', 'Vite', 'Copywriting', 'Conversão'],
@@ -69,14 +69,30 @@ export default function Projects() {
     }
   ]
 
+  const getItemsPerPage = () => {
+    if (window.innerWidth <= 768) return 1
+    if (window.innerWidth <= 1024) return 2
+    return 3
+  }
+
   const [flipped, setFlipped] = useState({})
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
   const [isTransitioning, setIsTransitioning] = useState(false)
+  const [itemsPerPage, setItemsPerPage] = useState(getItemsPerPage)
   const touchStartX = useRef(0)
   const touchEndX = useRef(0)
 
-  const totalPages = Math.ceil(projects.length / 3)
+  useEffect(() => {
+    const handleResize = () => {
+      setItemsPerPage(getItemsPerPage())
+      setCurrentIndex(0)
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  const totalPages = Math.ceil(projects.length / itemsPerPage)
 
   const goToSlide = useCallback((index) => {
     if (isTransitioning) return
@@ -141,7 +157,7 @@ export default function Projects() {
           >
             {Array.from({ length: totalPages }).map((_, pageIndex) => (
               <div key={pageIndex} className="carousel-slide">
-                {projects.slice(pageIndex * 3, pageIndex * 3 + 3).map((project) => (
+                {projects.slice(pageIndex * itemsPerPage, pageIndex * itemsPerPage + itemsPerPage).map((project) => (
                   <div
                     key={project.id}
                     className={`project-card ${flipped[project.id] ? 'flipped' : ''}`}
