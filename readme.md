@@ -6,14 +6,6 @@
 
 ---
 
-## 📸 Prévia do Projeto
-
-![Portfolio Preview - Leonardo Pereira](./portfolio-preview.png)
-
-*Seção Hero do portfólio com animações interativas e design moderno*
-
----
-
 ## 🎯 Sobre
 
 Sou um desenvolvedor front-end apaixonado por criar interfaces intuitivas e experiências de usuário excepcionais. Com experiência em desenvolvimento web moderno, trabalho com as tecnologias mais atuais para entregar soluções de alta qualidade.
