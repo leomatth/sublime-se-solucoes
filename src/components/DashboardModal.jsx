@@ -1,7 +1,7 @@
 import React from 'react';
 import './DashboardModal.css';
 
-export default function DashboardModal({ isOpen, onClose, title, src }) {
+export default function DashboardModal({ isOpen, onClose, title, image }) {
   if (!isOpen) return null;
 
   return (
@@ -16,21 +16,17 @@ export default function DashboardModal({ isOpen, onClose, title, src }) {
           </button>
         </div>
         <div className="dashboard-modal-body">
-          {src ? (
-            <iframe 
-              title={title}
-              width="100%" 
-              height="100%" 
-              src={src} 
-              frameBorder="0" 
-              allowFullScreen={true}
-            ></iframe>
+          {image ? (
+            <div className="dashboard-image-container">
+              <img src={image} alt={`Dashboard de ${title}`} className="dashboard-full-image" loading="lazy" />
+              <div className="dashboard-demo-badge">Versão de Demonstração</div>
+            </div>
           ) : (
             <div className="dashboard-placeholder">
               <div className="placeholder-chart bar-chart"></div>
               <div className="placeholder-chart pie-chart"></div>
               <div className="placeholder-chart line-chart"></div>
-              <p>O dashboard interactivo seria carregado aqui (ex: via iframe do Power BI).</p>
+              <p>O dashboard interactivo seria carregado aqui.</p>
             </div>
           )}
         </div>

@@ -47,13 +47,12 @@ const concepts = [
     niche: 'Marketing & Vendas',
     name: 'Marketing Analytics Pro',
     tagline: 'Conversões e Leads em tempo real',
-    description: 'Dashboard interativo (Power BI) para agências e equipas de marketing monitorizarem campanhas, ROI, custo por lead e tráfego.',
+    description: 'Dashboard interativo para agências e equipas de marketing monitorizarem campanhas, ROI, custo por lead e tráfego.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
     color: '#3b82f6',
     services: ['Análise de Leads', 'ROI de Campanhas', 'Tráfego Web'],
     accentClass: 'accent-blue',
-    type: 'dashboard',
-    dashboardUrl: 'https://app.powerbi.com/view?r=eyJrIjoiOGVmM2RlZjYtZTlhNi00ZWEzLThjZjItYTU5YzhjMzEwOGFjIiwidCI6IjI3MWViZmU4LWNlMGEtNDc2My05NmUyLWM3ZDIxOGNiOWRjYSIsImMiOjl9'
+    type: 'dashboard'
   },
   {
     id: 'dashboard-ecommerce',
@@ -193,7 +192,7 @@ export default function ConceptProjects() {
         isOpen={!!activeDashboard}
         onClose={closeDashboard}
         title={activeDashboard?.name || ''}
-        src={activeDashboard?.dashboardUrl}
+        image={activeDashboard?.image}
       />
     </section>
   )
