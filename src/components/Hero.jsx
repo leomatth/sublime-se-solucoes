@@ -1,122 +1,105 @@
-import { useState, useRef, useEffect } from 'react'
 import './Hero.css'
+import heroProjectImg from '../assets/projects/euro_wine.jpg'
 
 export default function Hero() {
-  const [positions, setPositions] = useState({ first: { x: 0, y: 0 }, second: { x: 0, y: 0 } })
-  const [clickedWord, setClickedWord] = useState(null)
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
-  const containerRef = useRef(null)
-  const firstRef = useRef(null)
-  const secondRef = useRef(null)
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePos({ x: e.clientX, y: e.clientY })
-    }
-
-    window.addEventListener('mousemove', handleMouseMove)
-    return () => window.removeEventListener('mousemove', handleMouseMove)
-  }, [])
-
-  useEffect(() => {
-    if (!containerRef.current) return
-
-    const moveWord = (wordKey) => {
-      if (clickedWord === wordKey) return
-
-      const ref = wordKey === 'first' ? firstRef : secondRef
-      if (!ref.current) return
-
-      const rect = ref.current.getBoundingClientRect()
-      const wordCenterX = rect.left + rect.width / 2
-      const wordCenterY = rect.top + rect.height / 2
-
-      const dx = mousePos.x - wordCenterX
-      const dy = mousePos.y - wordCenterY
-      const distance = Math.sqrt(dx * dx + dy * dy)
-
-      if (distance < 150) {
-        // Fugir do mouse
-        const angle = Math.atan2(dy, dx)
-        const escapeDistance = 150
-        const newX = Math.cos(angle + Math.PI) * escapeDistance
-        const newY = Math.sin(angle + Math.PI) * escapeDistance
-
-        setPositions((prev) => ({
-          ...prev,
-          [wordKey]: { x: newX, y: newY }
-        }))
-      } else {
-        // Movimento lateral suave
-        const direction = wordKey === 'first' ? -1 : 1
-        const randomX = direction * (Math.random() * 80 + 40)
-        const randomY = (Math.random() - 0.5) * 60
-
-        setPositions((prev) => ({
-          ...prev,
-          [wordKey]: { x: randomX, y: randomY }
-        }))
-      }
-    }
-
-    const interval = setInterval(() => {
-      moveWord('first')
-      moveWord('second')
-    }, 2000)
-
-    return () => clearInterval(interval)
-  }, [mousePos, clickedWord])
-
-  const handleWordClick = (word) => {
-    setClickedWord(word)
-    setPositions({ first: { x: 0, y: 0 }, second: { x: 0, y: 0 } })
-
-    setTimeout(() => {
-      setClickedWord(null)
-    }, 5000)
+  const scrollTo = (id) => {
+    const el = document.getElementById(id)
+    if (el) el.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
-    <section className="hero" ref={containerRef}>
-      <div className="hero-content">
-        <h1>
-          <span
-            ref={firstRef}
-            className="name-part first"
-            style={{
-              transform: `translate(${positions.first.x}px, ${positions.first.y}px)`,
-              cursor: 'pointer'
-            }}
-            onClick={() => handleWordClick('first')}
+    <section id="hero" className="hero" aria-label="Apresentação">
+      <div className="hero-layout">
+
+        {/* ── LEFT: editorial text ─────────────────────────────── */}
+        <div className="hero-text">
+
+          {/* Eyebrow — editorial label, not a pill badge */}
+          <div className="hero-eyebrow">
+            <span className="eyebrow-rule" aria-hidden="true"></span>
+            <span className="eyebrow-label">INDEPENDENT FRONT-END DEVELOPER</span>
+          </div>
+
+          {/* Headline — typographic editorial mix */}
+          <h1 className="hero-headline" aria-label="Websites que fazem o seu negócio parecer tão bom quanto ele é.">
+            <span className="hl-light">Websites que fazem</span>
+            <span className="hl-bold">o seu negócio parecer</span>
+            <span className="hl-regular">tão bom quanto ele é.</span>
+          </h1>
+
+          {/* Subheadline */}
+          <p className="hero-sub">
+            Desenvolvo websites e landing pages para empresas que querem
+            uma presença digital profissional, rápida e pensada para gerar oportunidades.
+          </p>
+
+          {/* CTAs — one primary button + text link */}
+          <div className="hero-actions">
+            <button
+              id="hero-cta-primary"
+              className="btn btn-primary hero-btn-primary"
+              onClick={() => scrollTo('contact-form')}
+              aria-label="Falar sobre um projecto com Leonardo Pereira"
+            >
+              Falar sobre um projecto
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M1 7h12M7.5 1.5L13 7l-5.5 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+            <button
+              id="hero-cta-secondary"
+              className="hero-link"
+              onClick={() => scrollTo('projects')}
+              aria-label="Ver projectos realizados"
+            >
+              Ver projectos ↗
+            </button>
+          </div>
+
+          {/* Meta — very quiet, no pills */}
+          <p className="hero-meta" aria-label="Especialidades">
+            Frontend · Performance · SEO · QA
+          </p>
+        </div>
+
+        {/* ── RIGHT: project visual ────────────────────────────── */}
+        <div className="hero-visual" aria-hidden="true">
+
+          {/* Project frame */}
+          <a
+            href="https://eurowineexperience.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hero-project-frame"
+            aria-label="Ver projecto Euro Wine Experience ao vivo"
           >
-            Leonardo
-          </span>
-          {' '}
-          <span
-            ref={secondRef}
-            className="name-part second"
-            style={{
-              transform: `translate(${positions.second.x}px, ${positions.second.y}px)`,
-              cursor: 'pointer'
-            }}
-            onClick={() => handleWordClick('second')}
-          >
-            Pereira
-          </span>
-        </h1>
-        <p className="hero-subtitle">
-          Desenvolvedor front-end especializado em criar experiências web modernas com JavaScript/TypeScript.
-        </p>
-        <p className="hero-description">
-          Transformo ideias em soluções digitais elegantes e funcionais.
-        </p>
-        <button className="cta-button">
-          Vamos conversar?
-        </button>
-      </div>
-      <div className="hero-decoration">
-        <div className="gradient-blob"></div>
-        <div className="gradient-blob-2"></div>
+            <img
+              src={heroProjectImg}
+              alt="Projecto Euro Wine Experience — website desenvolvido por Leonardo Pereira"
+              className="hero-project-img"
+              loading="eager"
+              width="800"
+              height="450"
+            />
+            {/* Hover overlay */}
+            <div className="hero-project-hover">
+              <span className="project-hover-label">Ver projecto ↗</span>
+            </div>
+          </a>
+
+          {/* Caption — editorial style */}
+          <div className="hero-project-caption">
+            <div className="caption-rule" aria-hidden="true"></div>
+            <div className="caption-body">
+              <span className="caption-index" aria-hidden="true">01</span>
+              <div className="caption-info">
+                <span className="caption-name">Euro Wine Experience</span>
+                <span className="caption-type">Vitrine Digital · React · Vite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   )
