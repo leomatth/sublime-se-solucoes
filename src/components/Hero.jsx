@@ -29,7 +29,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p className="hero-sub">
-            Desenvolvo websites e landing pages para empresas que querem
+            Desenvolvemos websites e landing pages para empresas que querem
             uma presença digital profissional, rápida e pensada para gerar oportunidades.
           </p>
 
@@ -39,7 +39,7 @@ export default function Hero() {
               id="hero-cta-primary"
               className="btn btn-primary hero-btn-primary"
               onClick={() => scrollTo('contact-form')}
-              aria-label="Falar sobre um projecto com Leonardo Pereira"
+              aria-label="Falar sobre um projecto com a Sublime-se Soluções"
             >
               Falar sobre um projecto
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -75,7 +75,7 @@ export default function Hero() {
           >
             <img
               src={heroProjectImg}
-              alt="Projecto Euro Wine Experience — website desenvolvido por Leonardo Pereira"
+              alt="Projecto Euro Wine Experience — website desenvolvido pela Sublime-se Soluções"
               className="hero-project-img"
               loading="eager"
               width="800"

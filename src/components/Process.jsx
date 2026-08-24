@@ -25,7 +25,7 @@ const steps = [
   {
     number: '03',
     title: 'Construímos',
-    description: 'Desenvolvo a solução com foco em qualidade e performance. Partilho o progresso ao longo do desenvolvimento para que esteja sempre a par.',
+    description: 'Desenvolvemos a solução com foco em qualidade e performance. Partilhamos o progresso ao longo do desenvolvimento para que esteja sempre a par.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <polyline points="16,18 22,12 16,6"/>
@@ -36,7 +36,7 @@ const steps = [
   {
     number: '04',
     title: 'Publicamos',
-    description: 'Coloco o projecto no ar e faço as validações finais — testes de responsividade, performance e funcionalidades — antes da entrega.',
+    description: 'Colocamos o projecto no ar e fazemos as validações finais — testes de responsividade, performance e funcionalidades — antes da entrega.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>

@@ -22,7 +22,7 @@
 .about-image-wrapper {
   position: relative;
   border-radius: var(--radius-xl);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .about-image {

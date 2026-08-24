@@ -57,7 +57,7 @@ export default function Services() {
   return (
     <section id="services" className="services" aria-labelledby="services-heading">
       <div className="services-header reveal">
-        <span className="section-label">O que eu faço</span>
+        <span className="section-label">O que nós fazemos</span>
         <h2 id="services-heading" className="services-title">
           Serviços para o seu negócio
         </h2>

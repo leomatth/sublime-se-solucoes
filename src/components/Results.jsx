@@ -42,7 +42,7 @@ export default function Results() {
     <section id="results" className="results">
       <h2>Resultados que Entrego</h2>
       <p className="results-subtitle">
-        Alguns números que resumem o impacto do meu trabalho para clientes e projetos.
+        Alguns números que resumem o impacto do nosso trabalho para clientes e projetos.
       </p>
       <div className="results-grid">
         {results.map((item, index) => (

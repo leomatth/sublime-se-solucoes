@@ -273,9 +273,9 @@ export default function Projects() {
       {/* GitHub note */}
       <div className="projects-github-note reveal">
         <p>
-          Quer conhecer o meu lado técnico?{' '}
+          Quer conhecer o nosso lado técnico?{' '}
           <a href="https://github.com/leomatth" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil GitHub">
-            Veja os meus projectos e código no GitHub →
+            Veja os nossos projectos e código no GitHub →
           </a>
         </p>
       </div>

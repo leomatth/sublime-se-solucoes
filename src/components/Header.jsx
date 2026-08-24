@@ -42,8 +42,8 @@ export default function Header() {
           onClick={() => scrollToSection('hero')}
           aria-label="Ir para o início"
         >
-          <span className="logo-mark">LP</span>
-          <span className="logo-text">Leonardo Pereira</span>
+          <span className="logo-mark">SS</span>
+          <span className="logo-text">Sublime-se Soluções</span>
         </button>
 
         {/* Desktop Nav */}
@@ -65,7 +65,7 @@ export default function Header() {
           onClick={() => scrollToSection('contact-form')}
           aria-label="Entrar em contacto"
         >
-          Falar comigo
+          Falar conosco
         </button>
 
         {/* Mobile toggle */}
@@ -99,7 +99,7 @@ export default function Header() {
             onClick={() => scrollToSection('contact-form')}
             tabIndex={isMenuOpen ? 0 : -1}
           >
-            Falar comigo
+            Falar conosco
           </button>
         </nav>
       </div>

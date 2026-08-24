@@ -44,7 +44,7 @@ export default function CTASection() {
             onClick={() => scrollTo('projects')}
             aria-label="Ver trabalho realizado"
           >
-            Ver o meu trabalho
+            Ver nosso trabalho
           </button>
         </div>
       </div>

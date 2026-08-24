@@ -1,5 +1,5 @@
 import './About.css'
-import profileImg from '../assets/profile/leomatth.png'
+import Text3DFlip from './Text3DFlip'
 
 export default function About() {
   return (
@@ -7,16 +7,35 @@ export default function About() {
       <div className="about-layout">
         {/* Image column */}
         <div className="about-image-col reveal">
-          <div className="about-image-wrapper">
-            <img
-              src={profileImg}
-              alt="Leonardo Pereira — Frontend Developer & QA"
-              className="about-image"
-              width="400"
-              height="400"
-              loading="lazy"
+          <div className="about-image-wrapper" style={{ height: '400px', width: '100%', background: 'transparent', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <Text3DFlip
+              text="SUBLIME-SE"
+              color="var(--accent-bright)"
+              staggerDuration={0.08}
+              font={{
+                fontFamily: "var(--font-sans)",
+                fontWeight: 900,
+                fontSize: "clamp(2.5rem, 4.5vw, 4.5rem)",
+                letterSpacing: "-0.05em",
+                lineHeight: "1em",
+                textAlign: "center"
+              }}
             />
-            <div className="about-image-decoration" aria-hidden="true"></div>
+            <Text3DFlip
+              text="SOLUÇÕES"
+              color="#fdf6b2"
+              staggerDuration={0.06}
+              staggerFrom="last"
+              font={{
+                fontFamily: "var(--font-sans)",
+                fontWeight: 700,
+                fontSize: "clamp(1.5rem, 2.5vw, 2.5rem)",
+                letterSpacing: "0.2em",
+                lineHeight: "1em",
+                textAlign: "center"
+              }}
+              style={{ marginTop: '-2rem' }}
+            />
           </div>
 
           {/* Stack badge */}
@@ -35,24 +54,18 @@ export default function About() {
           <span className="section-label">Sobre</span>
 
           <h2 id="about-heading" className="about-title">
-            Um Developer que pensa como cliente
+            Transformamos a sua presença digital em resultados
           </h2>
 
           <div className="about-body">
             <p>
-              Sou Leonardo Pereira, desenvolvedor Front-end e profissional de QA,
-              com experiência na criação de aplicações web e na garantia de qualidade
-              de produtos digitais.
+              Nós somos a <strong>Sublime-se Soluções</strong>, uma empresa especialista em soluções digitais que entende que o seu negócio é único e merece brilhar na internet.
             </p>
             <p>
-              O meu trabalho começa antes do código. Começa por entender o seu
-              negócio, o que o diferencia, e o que o seu cliente precisa de ver para
-              tomar uma decisão. Só depois estruturo a experiência e escrevo o código.
+              Do desenvolvimento de sites premium e aplicações exclusivas até à criação de sistemas inteligentes com automação e atendimento via IA, o nosso foco é um só: escalar as suas vendas. Nós estruturamos o seu posicionamento, criamos automações para o seu negócio e impulsionamos o seu Instagram para alcançar quem realmente importa.
             </p>
             <p>
-              O meu background em QA significa que entrego projectos que não apenas
-              parecem bons — funcionam correctamente em todos os dispositivos,
-              browsers e situações.
+              Não entregamos apenas tecnologia. Entregamos a tranquilidade de saber que o seu negócio funciona de forma inteligente, conectando marcas a pessoas através de experiências digitais memoráveis e focadas na conversão.
             </p>
           </div>
 
@@ -98,16 +111,16 @@ export default function About() {
             <button
               className="btn btn-primary"
               onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-              aria-label="Entrar em contacto com Leonardo Pereira"
+              aria-label="Entrar em contacto com a Sublime-se Soluções"
             >
-              Falar comigo
+              Falar conosco
             </button>
             <a
               href="https://github.com/leomatth"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary"
-              aria-label="Ver perfil do GitHub de Leonardo Pereira"
+              aria-label="Ver perfil do GitHub da Sublime-se Soluções"
             >
               GitHub
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">

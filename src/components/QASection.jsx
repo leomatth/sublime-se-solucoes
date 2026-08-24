@@ -16,11 +16,11 @@ export default function QASection() {
         <div className="qa-text reveal">
           <span className="section-label">Quality Assurance</span>
           <h2 id="qa-heading" className="qa-title">
-            Além de desenvolver,<br />eu testo.
+            Além de desenvolver,<br />nós testamos.
           </h2>
           <p className="qa-body">
-            O meu background em QA significa que cada projecto passa por validações
-            antes de ser entregue. Não apenas "parece bom no meu ecrã" — funciona
+            O nosso background em QA significa que cada projecto passa por validações
+            antes de ser entregue. Não apenas "parece bom no nosso ecrã" — funciona
             correctamente para todos os seus utilizadores.
           </p>
           <p className="qa-body">

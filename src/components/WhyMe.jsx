@@ -4,7 +4,7 @@ const reasons = [
   {
     number: '01',
     title: 'Design pensado para o negócio',
-    body: 'Não crio apenas páginas bonitas. Estruturo a experiência para que o visitante saiba o que fazer — e o que sentir.',
+    body: 'Não criamos apenas páginas bonitas. Estruturamos a experiência para que o visitante saiba o que fazer — e o que sentir.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
@@ -24,7 +24,7 @@ const reasons = [
   {
     number: '03',
     title: 'QA como diferencial',
-    body: 'O meu background em QA permite olhar para o projecto do ponto de vista de testes, bugs e experiência do utilizador — antes de entregar.',
+    body: 'O nosso background em QA permite olhar para o projecto do ponto de vista de testes, bugs e experiência do utilizador — antes de entregar.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.66 0 3.21.45 4.54 1.24"/>
@@ -50,7 +50,7 @@ export default function WhyMe() {
       <div className="why-header reveal">
         <span className="section-label">Diferenciais</span>
         <h2 id="why-heading" className="why-title">
-          Por que trabalhar comigo?
+          Por que trabalhar conosco?
         </h2>
         <p className="why-subtitle">
           Algumas razões pelas quais empresas escolhem trabalhar com um developer que também conhece QA.
