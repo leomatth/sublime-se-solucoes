@@ -42,7 +42,7 @@ export default function Header() {
           onClick={() => scrollToSection('hero')}
           aria-label="Ir para o início"
         >
-          <span className="logo-mark">SS</span>
+          <span className="logo-mark"><span className="logo-mark-sublime">S</span><span className="logo-mark-solucoes">S</span></span>
           <span className="logo-text">Sublime-se Soluções</span>
         </button>
 

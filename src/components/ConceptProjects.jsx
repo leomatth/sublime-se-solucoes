@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import './ConceptProjects.css'
 import barbeariaImg from '../assets/concepts/barbearia.jpg'
 import esteticaImg from '../assets/concepts/estetica.jpg'
 import personalImg from '../assets/concepts/personal.jpg'
+import DashboardModal from './DashboardModal'
 
 const concepts = [
   {
@@ -14,6 +16,7 @@ const concepts = [
     color: '#c9a227',
     services: ['Corte Clássico', 'Barba & Bigode', 'Tratamento Capilar'],
     accentClass: 'accent-amber',
+    type: 'website'
   },
   {
     id: 'estetica',
@@ -25,6 +28,7 @@ const concepts = [
     color: '#c084a0',
     services: ['Cabelo', 'Estética', 'Unhas'],
     accentClass: 'accent-rose',
+    type: 'website'
   },
   {
     id: 'personal',
@@ -36,20 +40,70 @@ const concepts = [
     color: '#22c55e',
     services: ['Treino Presencial', 'Online Coaching', 'Avaliação Física'],
     accentClass: 'accent-green',
+    type: 'website'
+  },
+  {
+    id: 'dashboard-marketing',
+    niche: 'Marketing & Vendas',
+    name: 'Marketing Analytics Pro',
+    tagline: 'Conversões e Leads em tempo real',
+    description: 'Dashboard interativo (Power BI) para agências e equipas de marketing monitorizarem campanhas, ROI, custo por lead e tráfego.',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
+    color: '#3b82f6',
+    services: ['Análise de Leads', 'ROI de Campanhas', 'Tráfego Web'],
+    accentClass: 'accent-blue',
+    type: 'dashboard',
+    dashboardUrl: 'https://app.powerbi.com/view?r=eyJrIjoiOGVmM2RlZjYtZTlhNi00ZWEzLThjZjItYTU5YzhjMzEwOGFjIiwidCI6IjI3MWViZmU4LWNlMGEtNDc2My05NmUyLWM3ZDIxOGNiOWRjYSIsImMiOjl9'
+  },
+  {
+    id: 'dashboard-ecommerce',
+    niche: 'E-commerce',
+    name: 'Sales Control 360',
+    tagline: 'O pulso da sua loja online',
+    description: 'Dashboard financeiro focado em e-commerce. Acompanhe vendas diárias, produtos mais vendidos, margem de lucro e comportamento de clientes.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
+    color: '#8b5cf6',
+    services: ['Receita Diária', 'Top Produtos', 'Margem de Lucro'],
+    accentClass: 'accent-purple',
+    type: 'dashboard'
+  },
+  {
+    id: 'dashboard-saude',
+    niche: 'Saúde & Clínicas',
+    name: 'Clinic Metrics',
+    tagline: 'Gestão de pacientes e consultas',
+    description: 'Dashboard analítico para gestão de clínicas. Visualize o volume de consultas, taxas de abstenção (no-show) e performance do corpo clínico.',
+    image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076&auto=format&fit=crop',
+    color: '#14b8a6',
+    services: ['Gestão de Consultas', 'Análise de No-shows', 'Produtividade'],
+    accentClass: 'accent-teal',
+    type: 'dashboard'
   },
 ]
 
 export default function ConceptProjects() {
+  const [activeDashboard, setActiveDashboard] = useState(null);
+
+  const openDashboard = (concept) => {
+    setActiveDashboard(concept);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeDashboard = () => {
+    setActiveDashboard(null);
+    document.body.style.overflow = 'auto';
+  };
+
   return (
     <section id="concept-projects" className="concepts-section" aria-labelledby="concepts-heading">
       <div className="concepts-header reveal">
-        <span className="section-label">Demonstração</span>
+        <span className="section-label">Demonstração & Dados</span>
         <h2 id="concepts-heading" className="concepts-title">
-          Conceitos para negócios
+          Conceitos e Dashboards
         </h2>
         <p className="concepts-subtitle">
-          O seu negócio pode ter um website exactamente assim. Estes são projectos
-          demonstrativos criados para mostrar o que é possível para cada nicho.
+          O seu negócio pode ter uma presença digital e inteligência de dados exactamente assim. 
+          Estes são projectos demonstrativos criados para mostrar o que é possível.
         </p>
         <div className="concepts-disclaimer" role="note" aria-label="Aviso sobre projectos demonstrativos">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
@@ -107,23 +161,40 @@ export default function ConceptProjects() {
 
               <div className="concept-cta">
                 <p className="concept-cta-text">
-                  Tem um negócio neste nicho?
+                  {concept.type === 'dashboard' ? 'Gostaria de ter estes dados?' : 'Tem um negócio neste nicho?'}
                 </p>
-                <button
-                  className="btn btn-primary concept-cta-btn"
-                  onClick={() => {
-                    const el = document.getElementById('contact-form')
-                    if (el) el.scrollIntoView({ behavior: 'smooth' })
-                  }}
-                  aria-label={`Solicitar website para ${concept.niche}`}
-                >
-                  Quero um website assim
-                </button>
+                {concept.type === 'dashboard' ? (
+                  <button
+                    className="btn btn-primary concept-cta-btn"
+                    onClick={() => openDashboard(concept)}
+                    aria-label={`Ver dashboard para ${concept.niche}`}
+                  >
+                    Ver Dashboard
+                  </button>
+                ) : (
+                  <button
+                    className="btn btn-primary concept-cta-btn"
+                    onClick={() => {
+                      const el = document.getElementById('contact-form')
+                      if (el) el.scrollIntoView({ behavior: 'smooth' })
+                    }}
+                    aria-label={`Solicitar website para ${concept.niche}`}
+                  >
+                    Quero um website assim
+                  </button>
+                )}
               </div>
             </div>
           </article>
         ))}
       </div>
+
+      <DashboardModal
+        isOpen={!!activeDashboard}
+        onClose={closeDashboard}
+        title={activeDashboard?.name || ''}
+        src={activeDashboard?.dashboardUrl}
+      />
     </section>
   )
 }

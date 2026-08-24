@@ -10,7 +10,7 @@ export default function About() {
           <div className="about-image-wrapper" style={{ height: '400px', width: '100%', background: 'transparent', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
             <Text3DFlip
               text="SUBLIME-SE"
-              color="var(--accent-bright)"
+              color="#308ba2"
               staggerDuration={0.08}
               font={{
                 fontFamily: "var(--font-sans)",
@@ -23,7 +23,7 @@ export default function About() {
             />
             <Text3DFlip
               text="SOLUÇÕES"
-              color="#fdf6b2"
+              color="#f8b816"
               staggerDuration={0.06}
               staggerFrom="last"
               font={{

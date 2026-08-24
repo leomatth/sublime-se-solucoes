@@ -51,6 +51,18 @@ const services = [
     description: 'Testes e validações para garantir que o projecto funciona correctamente em diferentes dispositivos, browsers e tamanhos de ecrã.',
     tags: ['Cross-browser', 'Responsive Testing', 'Functional Testing', 'Bug Reports'],
   },
+  {
+    id: 'analytics',
+    number: '05',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M18 20V10M12 20V4M6 20v-6"/>
+      </svg>
+    ),
+    title: 'Análise de Dados & Dashboards',
+    description: 'Transformamos dados em decisões. Dashboards interativos (Power BI), implementação de Google Analytics e análise de métricas de marketing para o seu negócio.',
+    tags: ['Power BI', 'Google Analytics', 'Métricas', 'Leads'],
+  },
 ]
 
 export default function Services() {

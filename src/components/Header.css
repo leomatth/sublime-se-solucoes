@@ -61,6 +61,14 @@
   flex-shrink: 0;
 }
 
+.logo-mark-sublime {
+  color: #308ba2;
+}
+
+.logo-mark-solucoes {
+  color: #f8b816;
+}
+
 .logo-text {
   font-size: var(--text-base);
   font-weight: var(--weight-semibold);
