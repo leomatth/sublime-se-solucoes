@@ -34,14 +34,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  background: var(--accent);
-  border-radius: var(--radius-sm);
-  font-size: var(--text-sm);
-  font-weight: var(--weight-bold);
-  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   flex-shrink: 0;
+}
+
+.logo-mark-sublime {
+  color: #308ba2;
+}
+
+.logo-mark-solucoes {
+  color: #f8b816;
 }
 
 .footer-name {
