@@ -117,8 +117,8 @@
   font-size: var(--text-xs);
   font-weight: var(--weight-medium);
   color: var(--accent-bright);
-  background: rgba(99, 102, 241, 0.08);
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  background: var(--bg-card); /* Using card bg instead of transparent tint */
+  border: 1px solid var(--border-accent);
   padding: 3px 10px;
   border-radius: var(--radius-full);
   letter-spacing: 0.02em;

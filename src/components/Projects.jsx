@@ -37,7 +37,7 @@ const projects = [
     tags: ['JavaScript', 'Bootstrap', 'Responsivo'],
     link: 'https://github.com/leomatth/YgorAzevedoNutri',
     demo: 'https://ygorazevedo.vercel.app/',
-    color: '#6366f1',
+    color: '#075384',
     gradient: 'linear-gradient(135deg, #0f1729 0%, #1a2347 50%, #0d1535 100%)',
   },
   {

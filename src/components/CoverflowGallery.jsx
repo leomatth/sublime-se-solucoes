@@ -167,7 +167,7 @@ export default function CoverflowGallery({
               {/* bottom gradient + card info */}
               <div style={{ position:'absolute', inset:0, background:'linear-gradient(180deg, transparent 25%, rgba(0,0,0,0.9) 100%)', pointerEvents:'none' }} />
               <div style={{ position:'absolute', bottom:20, left:22, right:22, pointerEvents:'none' }}>
-                <div style={{ fontSize:10, color: slide.color ?? '#818cf8', fontWeight:600, textTransform:'uppercase', letterSpacing:'0.1em', marginBottom:5 }}>
+                <div style={{ fontSize:10, color: slide.color ?? '#2779b4', fontWeight:600, textTransform:'uppercase', letterSpacing:'0.1em', marginBottom:5 }}>
                   {slide.category}
                 </div>
                 <div style={{ fontSize:17, fontWeight:700, color:'#fff', letterSpacing:'-0.01em', lineHeight:1.25 }}>
@@ -208,7 +208,7 @@ export default function CoverflowGallery({
               width:      i === active ? 22 : 6,
               height:     6,
               borderRadius: 3,
-              background: i === active ? '#6366f1' : 'rgba(255,255,255,0.18)',
+              background: i === active ? '#075384' : 'rgba(255,255,255,0.18)',
               border:     'none',
               cursor:     'pointer',
               padding:    0,

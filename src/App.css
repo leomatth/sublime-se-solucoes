@@ -11,25 +11,45 @@
 
 /* Design Tokens */
 :root {
-  /* Colors */
-  --bg-base: #0a0a0f;
-  --bg-surface: #111118;
-  --bg-elevated: #16161f;
-  --bg-card: #1a1a25;
+  /* =============================================
+     Sublime-se Colors
+     ============================================= */
+  --color-navy: #003052;
+  --color-petroleo: #104d70;
+  --color-sublime: #075384;
+  --color-ceu: #2779b4;
+  --color-teal: #158184;
+  --color-ambar: #f19f00;
+  --color-gelo: #e4f3fa;
 
-  --accent: #6366f1;
-  --accent-bright: #818cf8;
-  --accent-dim: #4f46e5;
-  --accent-glow: rgba(99, 102, 241, 0.15);
+  /* Backgrounds (Premium Dark Navy Theme) */
+  --bg-base: #001524; /* Deepest dark blue for base */
+  --bg-surface: #001e33; 
+  --bg-elevated: var(--color-navy); /* #003052 */
+  --bg-card: #02385e; 
 
-  --text-primary: #f1f1f6;
-  --text-secondary: #a8a8bb;
-  --text-muted: #6b6b82;
-  --text-inverse: #0a0a0f;
+  /* Accents */
+  --accent: var(--color-sublime); /* #075384 */
+  --accent-bright: var(--color-ceu); /* #2779b4 */
+  --accent-dim: var(--color-petroleo); /* #104d70 */
+  --accent-glow: rgba(39, 121, 180, 0.2);
+  --accent-secondary: var(--color-teal); /* #158184 */
+  
+  /* Call to Action (High Contrast) */
+  --cta-bg: var(--color-ambar);
+  --cta-hover: #d88e00;
+  --cta-glow: rgba(241, 159, 0, 0.3);
 
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-default: rgba(255, 255, 255, 0.1);
-  --border-accent: rgba(99, 102, 241, 0.4);
+  /* Typography */
+  --text-primary: #ffffff;
+  --text-secondary: var(--color-gelo); /* #e4f3fa */
+  --text-muted: #8fb6cf;
+  --text-inverse: var(--bg-base);
+
+  /* Borders */
+  --border-subtle: rgba(228, 243, 250, 0.05);
+  --border-default: rgba(228, 243, 250, 0.1);
+  --border-accent: rgba(39, 121, 180, 0.4);
 
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -83,14 +103,14 @@
   --radius-xl: 24px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.5);
-  --shadow-accent: 0 0 40px rgba(99, 102, 241, 0.2);
+  --shadow-sm: 0 2px 4px rgba(0, 21, 36, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 21, 36, 0.5);
+  --shadow-lg: 0 10px 40px rgba(0, 21, 36, 0.6);
+  --shadow-accent: 0 0 40px rgba(39, 121, 180, 0.2);
 
-  --transition-fast: 150ms ease;
-  --transition-base: 250ms ease;
-  --transition-slow: 400ms ease;
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Base */
@@ -138,11 +158,12 @@ p {
 a {
   color: var(--accent-bright);
   text-decoration: none;
-  transition: color var(--transition-base);
+  transition: color var(--transition-base), text-shadow var(--transition-base);
 }
 
 a:hover {
   color: var(--text-primary);
+  text-shadow: 0 0 8px var(--accent-glow);
 }
 
 /* Layout */
@@ -220,38 +241,41 @@ section {
   border-radius: var(--radius-full);
   font-family: var(--font-sans);
   font-size: var(--text-sm);
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-bold); /* Bolder for premium look */
   cursor: pointer;
   transition: all var(--transition-base);
   border: none;
   text-decoration: none;
   white-space: nowrap;
+  letter-spacing: 0.02em;
 }
 
 .btn-primary {
-  background: var(--accent);
-  color: #fff;
-  box-shadow: 0 0 0 0 var(--accent-glow);
+  background: var(--cta-bg);
+  color: #000; /* Dark text for contrast against amber */
+  box-shadow: 0 0 0 0 var(--cta-glow);
 }
 
 .btn-primary:hover {
-  background: var(--accent-bright);
-  color: #fff;
+  background: var(--cta-hover);
+  color: #000;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 8px 24px var(--cta-glow);
 }
 
 .btn-secondary {
   background: transparent;
   color: var(--text-primary);
   border: 1px solid var(--border-default);
+  backdrop-filter: blur(10px); /* Glassmorphism touch */
 }
 
 .btn-secondary:hover {
-  background: var(--bg-elevated);
+  background: rgba(255, 255, 255, 0.03); /* Extremely subtle light on hover */
   color: var(--text-primary);
   border-color: var(--border-accent);
   transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .btn-lg {
