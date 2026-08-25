@@ -112,8 +112,8 @@ export default function ContactForm() {
                 </svg>
               </div>
               <div>
-                <span className="direct-contact-label">GitHub</span>
-                <span className="direct-contact-value">leomatth</span>
+                <span className="direct-contact-label">Repositórios</span>
+                <span className="direct-contact-value">GitHub</span>
               </div>
             </a>
           </div>
