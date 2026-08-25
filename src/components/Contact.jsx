@@ -23,7 +23,7 @@ export default function Contact() {
           <span className="contact-link">Visitar Perfil →</span>
         </a>
 
-        <a href="mailto:seu@email.com" className="contact-card email">
+        <a href="mailto:diretoria@solucoes.sublime-se.com" className="contact-card email">
           <div className="contact-icon">✉️</div>
           <h3>Email</h3>
           <p>Envie uma mensagem detalhada</p>

@@ -66,9 +66,9 @@ export default function ContactForm() {
 
           <div className="form-direct-contacts" aria-label="Contactos directos">
             <a
-              href="mailto:leomattheus95@gmail.com"
+              href="mailto:diretoria@solucoes.sublime-se.com"
               className="direct-contact-item"
-              aria-label="Enviar email para leomattheus95@gmail.com"
+              aria-label="Enviar email para diretoria@solucoes.sublime-se.com"
             >
               <div className="direct-contact-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -77,7 +77,7 @@ export default function ContactForm() {
               </div>
               <div>
                 <span className="direct-contact-label">Email</span>
-                <span className="direct-contact-value">leomattheus95@gmail.com</span>
+                <span className="direct-contact-value">diretoria@solucoes.sublime-se.com</span>
               </div>
             </a>
 
