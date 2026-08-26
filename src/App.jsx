@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom'
 import { useEffect } from 'react'
 import './App.css'
 import Header from './components/Header'
@@ -12,9 +13,10 @@ import Process from './components/Process'
 import ContactForm from './components/ContactForm'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
+import LandingPage from './pages/LandingPage'
+import LP48h from './pages/LP48h'
 
-function App() {
-  // Scroll reveal
+function HomePage() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -50,6 +52,16 @@ function App() {
       </main>
       <Footer />
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/lp" element={<LandingPage />} />
+      <Route path="/lp/48h" element={<LP48h />} />
+    </Routes>
   )
 }
 
