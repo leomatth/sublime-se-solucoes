@@ -9,7 +9,7 @@
 }
 
 .header.scrolled {
-  background: rgba(10, 10, 15, 0.88);
+  background: rgba(0, 21, 36, 0.9);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
@@ -46,29 +46,20 @@
   opacity: 0.8;
 }
 
-.logo-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px; /* Slightly larger since there's no background box */
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  flex-shrink: 0;
+/* Logo image */
+.header-logo-image {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  /* Slight drop shadow so logo pops on dark background */
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+  transition: filter var(--transition-base), transform var(--transition-base);
 }
 
-.logo-mark-sublime {
-  color: #308ba2;
-}
-
-.logo-mark-solucoes {
-  color: #f8b816;
-}
-
-.logo-text {
-  font-size: var(--text-base);
-  font-weight: var(--weight-semibold);
-  color: var(--text-primary);
-  letter-spacing: -0.01em;
+.header-logo:hover .header-logo-image {
+  filter: drop-shadow(0 4px 16px rgba(241, 159, 0, 0.3));
+  transform: scale(1.03);
 }
 
 /* Desktop Nav */
@@ -211,6 +202,7 @@
 }
 
 @media (max-width: 900px) {
+
   .header-nav,
   .header-cta {
     display: none;
@@ -234,7 +226,7 @@
     padding: 0.75rem 1.25rem;
   }
 
-  .logo-text {
-    display: none;
+  .header-logo-image {
+    height: 36px;
   }
 }

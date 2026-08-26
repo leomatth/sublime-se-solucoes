@@ -64,9 +64,8 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="logo-mark"><span className="logo-mark-sublime">S</span><span className="logo-mark-solucoes">S</span></span>
+              <img src="/logo.png" alt="Sublime-se Soluções" className="footer-logo-image" />
               <div>
-                <p className="footer-name">Sublime-se Soluções</p>
                 <p className="footer-role">Desenvolvimento Digital</p>
               </div>
             </div>

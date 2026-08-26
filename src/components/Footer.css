@@ -30,22 +30,12 @@
   margin-bottom: var(--space-3);
 }
 
-.logo-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  flex-shrink: 0;
-}
-
-.logo-mark-sublime {
-  color: #308ba2;
-}
-
-.logo-mark-solucoes {
-  color: #f8b816;
+.footer-logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
 }
 
 .footer-name {

@@ -27,8 +27,32 @@ const services = [
     tags: ['Copywriting', 'Conversão', 'CTA', 'A/B Testing'],
   },
   {
-    id: 'performance',
+    id: 'automations',
     number: '03',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+      </svg>
+    ),
+    title: 'Automação & Integrações Inteligentes',
+    description: 'Automação de processos com n8n, encaminhamento de leads de anúncios (Instagram/Facebook) direto para o WhatsApp, e respostas rápidas automáticas em comentários e DMs.',
+    tags: ['n8n', 'WhatsApp', 'Instagram', 'Automação de Leads'],
+  },
+  {
+    id: 'analytics',
+    number: '04',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M18 20V10M12 20V4M6 20v-6"/>
+      </svg>
+    ),
+    title: 'Análise de Dados & Dashboards',
+    description: 'Transformamos dados em decisões. Dashboards interativos (Power BI), implementação de Google Analytics e análise de métricas de marketing para o seu negócio.',
+    tags: ['Power BI', 'Google Analytics', 'Métricas', 'Leads'],
+  },
+  {
+    id: 'performance',
+    number: '05',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
@@ -40,7 +64,7 @@ const services = [
   },
   {
     id: 'qa',
-    number: '04',
+    number: '06',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M9 12l2 2 4-4"/>
@@ -50,18 +74,6 @@ const services = [
     title: 'QA & Qualidade',
     description: 'Testes e validações para garantir que o projecto funciona correctamente em diferentes dispositivos, browsers e tamanhos de ecrã.',
     tags: ['Cross-browser', 'Responsive Testing', 'Functional Testing', 'Bug Reports'],
-  },
-  {
-    id: 'analytics',
-    number: '05',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-        <path d="M18 20V10M12 20V4M6 20v-6"/>
-      </svg>
-    ),
-    title: 'Análise de Dados & Dashboards',
-    description: 'Transformamos dados em decisões. Dashboards interativos (Power BI), implementação de Google Analytics e análise de métricas de marketing para o seu negócio.',
-    tags: ['Power BI', 'Google Analytics', 'Métricas', 'Leads'],
   },
 ]
 
