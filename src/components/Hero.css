@@ -106,25 +106,29 @@
   animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.5s;
 }
 
-.hero-btn-primary {
+.hero-btn-whatsapp {
   padding: 1rem 1.75rem;
   font-size: var(--text-sm);
-  font-weight: var(--weight-medium);
+  font-weight: var(--weight-bold);
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  /* Purple is used here as an accent */
-  background: var(--accent);
-  color: white;
+  background: #25D366; /* WhatsApp green - brand standard */
+  color: #fff;
   border: none;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-full);
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
 }
 
-.hero-btn-primary:hover {
-  background: var(--accent-bright);
+.hero-btn-whatsapp:hover {
+  background: #1ebe5d;
+  color: #fff;
   transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.45);
 }
 
 .hero-link {
