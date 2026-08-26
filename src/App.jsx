@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import './App.css'
 import Header from './components/Header'
@@ -58,9 +58,21 @@ function HomePage() {
 function App() {
   return (
     <Routes>
+      {/* Página Principal / Site Institucional */}
       <Route path="/" element={<HomePage />} />
+
+      {/* Landing Page Institucional Genérica */}
       <Route path="/lp" element={<LandingPage />} />
+      <Route path="/lp/" element={<LandingPage />} />
+
+      {/* Landing Page de Oferta em 48h */}
       <Route path="/lp/48h" element={<LP48h />} />
+      <Route path="/lp/48h/" element={<LP48h />} />
+      <Route path="/48h" element={<LP48h />} />
+      <Route path="/landing-pages-48h" element={<LP48h />} />
+
+      {/* Fallback para rotas não encontradas */}
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
 }
