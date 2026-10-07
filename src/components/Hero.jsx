@@ -53,9 +53,9 @@ export default function Hero() {
               id="hero-cta-secondary"
               className="hero-link"
               onClick={() => scrollTo('projects')}
-              aria-label="Ver projectos realizados"
+              aria-label="Ver projetos realizados"
             >
-              Ver projectos ↗
+              Ver projetos ↗
             </button>
           </div>
 
@@ -74,11 +74,11 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             className="hero-project-frame"
-            aria-label="Ver projecto Euro Wine Experience ao vivo"
+            aria-label="Ver projeto Euro Wine Experience ao vivo"
           >
             <img
               src={heroProjectImg}
-              alt="Projecto Euro Wine Experience — website desenvolvido pela Sublime-se Soluções"
+              alt="Projeto Euro Wine Experience — website desenvolvido pela Sublime-se Soluções"
               className="hero-project-img"
               loading="eager"
               width="800"
@@ -86,7 +86,7 @@ export default function Hero() {
             />
             {/* Hover overlay */}
             <div className="hero-project-hover">
-              <span className="project-hover-label">Ver projecto ↗</span>
+              <span className="project-hover-label">Ver projeto ↗</span>
             </div>
           </a>
 

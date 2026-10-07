@@ -14,7 +14,7 @@ const steps = [
   {
     number: '02',
     title: 'Planeamos',
-    description: 'Definimos a estrutura, o conteúdo e a experiência que o projecto vai ter. Antes de escrever uma linha de código, temos um plano claro.',
+    description: 'Definimos a estrutura, o conteúdo e a experiência que o projeto vai ter. Antes de escrever uma linha de código, temos um plano claro.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
@@ -36,7 +36,7 @@ const steps = [
   {
     number: '04',
     title: 'Publicamos',
-    description: 'Colocamos o projecto no ar e fazemos as validações finais — testes de responsividade, performance e funcionalidades — antes da entrega.',
+    description: 'Colocamos o projeto no ar e fazemos as validações finais — testes de responsividade, performance e funcionalidades — antes da entrega.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
@@ -54,7 +54,7 @@ export default function Process() {
           Como funciona
         </h2>
         <p className="process-subtitle">
-          Um processo simples e transparente, do primeiro contacto à entrega do projecto.
+          Um processo simples e transparente, do primeiro contacto à entrega do projeto.
         </p>
       </div>
 

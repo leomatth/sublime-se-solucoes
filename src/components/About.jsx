@@ -91,7 +91,7 @@ export default function About() {
               </div>
               <div>
                 <strong>Mobile first</strong>
-                <span>Todos os projectos são testados e optimizados para qualquer dispositivo.</span>
+                <span>Todos os projetos são testados e optimizados para qualquer dispositivo.</span>
               </div>
             </li>
             <li className="about-highlight">
@@ -102,7 +102,7 @@ export default function About() {
               </div>
               <div>
                 <strong>QA integrado</strong>
-                <span>Testo o projecto antes de entregar — menos bugs, melhor experiência.</span>
+                <span>Testo o projeto antes de entregar — menos bugs, melhor experiência.</span>
               </div>
             </li>
           </ul>

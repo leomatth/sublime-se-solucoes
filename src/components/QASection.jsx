@@ -19,7 +19,7 @@ export default function QASection() {
             Além de desenvolver,<br />nós testamos.
           </h2>
           <p className="qa-body">
-            O nosso background em QA significa que cada projecto passa por validações
+            O nosso background em QA significa que cada projeto passa por validações
             antes de ser entregue. Não apenas "parece bom no nosso ecrã" — funciona
             correctamente para todos os seus utilizadores.
           </p>

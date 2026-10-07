@@ -72,7 +72,7 @@ const services = [
       </svg>
     ),
     title: 'QA & Qualidade',
-    description: 'Testes e validações para garantir que o projecto funciona correctamente em diferentes dispositivos, browsers e tamanhos de ecrã.',
+    description: 'Testes e validações para garantir que o projeto funciona correctamente em diferentes dispositivos, browsers e tamanhos de ecrã.',
     tags: ['Cross-browser', 'Responsive Testing', 'Functional Testing', 'Bug Reports'],
   },
 ]
@@ -86,7 +86,7 @@ export default function Services() {
           Serviços para o seu negócio
         </h2>
         <p className="services-subtitle">
-          Desde a primeira impressão até à conversão — cada projecto é pensado para ajudar o seu negócio a crescer online.
+          Desde a primeira impressão até à conversão — cada projeto é pensado para ajudar o seu negócio a crescer online.
         </p>
       </div>
 

@@ -57,7 +57,7 @@ export default function ContactForm() {
         <div className="form-intro reveal">
           <span className="section-label">Contacto</span>
           <h2 id="contact-form-heading" className="form-intro-title">
-            Vamos falar sobre o seu projecto
+            Vamos falar sobre o seu projeto
           </h2>
           <p className="form-intro-body">
             Tem um negócio e precisa de um website profissional? Preencha o formulário e

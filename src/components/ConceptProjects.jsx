@@ -102,14 +102,14 @@ export default function ConceptProjects() {
         </h2>
         <p className="concepts-subtitle">
           O seu negócio pode ter uma presença digital e inteligência de dados exactamente assim. 
-          Estes são projectos demonstrativos criados para mostrar o que é possível.
+          Estes são projetos demonstrativos criados para mostrar o que é possível.
         </p>
-        <div className="concepts-disclaimer" role="note" aria-label="Aviso sobre projectos demonstrativos">
+        <div className="concepts-disclaimer" role="note" aria-label="Aviso sobre projetos demonstrativos">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
             <circle cx="12" cy="12" r="10"/>
             <path d="M12 8v4M12 16h.01"/>
           </svg>
-          Projectos demonstrativos — não representam clientes reais
+          Projetos demonstrativos — não representam clientes reais
         </div>
       </div>
 
@@ -123,7 +123,7 @@ export default function ConceptProjects() {
             aria-labelledby={`concept-title-${concept.id}`}
           >
             {/* Badge */}
-            <div className="concept-badge" aria-label={`Projecto demonstrativo: ${concept.niche}`}>
+            <div className="concept-badge" aria-label={`Projeto demonstrativo: ${concept.niche}`}>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
@@ -152,7 +152,7 @@ export default function ConceptProjects() {
               <p className="concept-tagline">"{concept.tagline}"</p>
               <p className="concept-description">{concept.description}</p>
 
-              <div className="concept-services" aria-label={`Serviços no projecto ${concept.niche}`}>
+              <div className="concept-services" aria-label={`Serviços no projeto ${concept.niche}`}>
                 {concept.services.map((service) => (
                   <span key={service} className="concept-service-tag">{service}</span>
                 ))}

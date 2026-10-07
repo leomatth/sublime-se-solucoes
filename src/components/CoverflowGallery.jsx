@@ -107,7 +107,7 @@ export default function CoverflowGallery({
       tabIndex={0}
       role="group"
       aria-roledescription="carousel"
-      aria-label="Galeria de projectos"
+      aria-label="Galeria de projetos"
       onKeyDown={onKeyDown}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
@@ -195,14 +195,14 @@ export default function CoverflowGallery({
       <div
         style={{ position:'absolute', bottom:0, left:'50%', transform:'translateX(-50%)', display:'flex', gap:6, alignItems:'center' }}
         role="tablist"
-        aria-label="Navegar entre projectos"
+        aria-label="Navegar entre projetos"
       >
         {slides.map((_, i) => (
           <button
             key={i}
             role="tab"
             aria-selected={i === active}
-            aria-label={`Projecto ${i + 1}: ${slides[i].title}`}
+            aria-label={`Projeto ${i + 1}: ${slides[i].title}`}
             onClick={() => { if (!lockRef.current) { lock(); setActive(i) } }}
             style={{
               width:      i === active ? 22 : 6,

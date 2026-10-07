@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { useRoutes, Navigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import './App.css'
 import Header from './components/Header'
@@ -15,6 +15,7 @@ import CTASection from './components/CTASection'
 import Footer from './components/Footer'
 import LandingPage from './pages/LandingPage'
 import LP48h from './pages/LP48h'
+import PlanoFundador from './pages/PlanoFundador'
 
 function HomePage() {
   useEffect(() => {
@@ -55,26 +56,18 @@ function HomePage() {
   )
 }
 
+export const routes = [
+  { path: "/", element: <HomePage /> },
+  { path: "/lp", element: <LandingPage /> },
+  { path: "/lp/48h", element: <LP48h /> },
+  { path: "/48h", element: <LP48h /> },
+  { path: "/landing-pages-48h", element: <LP48h /> },
+  { path: "/plano-fundador", element: <PlanoFundador /> },
+  { path: "*", element: <Navigate to="/" replace /> }
+];
+
 function App() {
-  return (
-    <Routes>
-      {/* Página Principal / Site Institucional */}
-      <Route path="/" element={<HomePage />} />
-
-      {/* Landing Page Institucional Genérica */}
-      <Route path="/lp" element={<LandingPage />} />
-      <Route path="/lp/" element={<LandingPage />} />
-
-      {/* Landing Page de Oferta em 48h */}
-      <Route path="/lp/48h" element={<LP48h />} />
-      <Route path="/lp/48h/" element={<LP48h />} />
-      <Route path="/48h" element={<LP48h />} />
-      <Route path="/landing-pages-48h" element={<LP48h />} />
-
-      {/* Fallback para rotas não encontradas */}
-      <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
-  )
+  return useRoutes(routes);
 }
 
-export default App
+export default App;

@@ -31,9 +31,9 @@ export default function CTASection() {
             id="cta-primary-btn"
             className="btn btn-primary btn-lg"
             onClick={() => scrollTo('contact-form')}
-            aria-label="Falar sobre o meu projecto"
+            aria-label="Falar sobre o meu projeto"
           >
-            Quero falar sobre meu projecto
+            Quero falar sobre meu projeto
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

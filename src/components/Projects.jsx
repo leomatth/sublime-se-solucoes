@@ -69,7 +69,7 @@ const projects = [
     category: 'Portfólio',
     title: 'Portfólio Adriano Dantas',
     problem: 'Profissional de tecnologia precisava de um portfólio que destacasse a sua experiência.',
-    solution: 'Portfólio responsivo com showcase de projectos, experiência profissional e formulário de contacto.',
+    solution: 'Portfólio responsivo com showcase de projetos, experiência profissional e formulário de contacto.',
     tags: ['React', 'Vite', 'Responsivo'],
     link: 'https://adrianodantas.vercel.app/',
     demo: 'https://adrianodantas.vercel.app/',
@@ -174,10 +174,10 @@ export default function Projects() {
       <div className="projects-header reveal">
         <span className="section-label">Portfólio</span>
         <h2 id="projects-heading" className="projects-title">
-          Projectos realizados
+          Projetos realizados
         </h2>
         <p className="projects-subtitle">
-          Navegue pelos projectos e clique para ver os detalhes.
+          Navegue pelos projetos e clique para ver os detalhes.
           Use as setas do teclado ou arraste no móvel.
         </p>
       </div>
@@ -205,7 +205,7 @@ export default function Projects() {
         key={project.id}          /* re-mounts on change to trigger CSS animation */
         aria-live="polite"
         aria-atomic="true"
-        aria-label={`Detalhes do projecto: ${project.title}`}
+        aria-label={`Detalhes do projeto: ${project.title}`}
       >
         <div className="detail-inner">
           {/* Left: info */}
@@ -244,9 +244,9 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
-                  aria-label={`Ver projecto ${project.title} ao vivo`}
+                  aria-label={`Ver projeto ${project.title} ao vivo`}
                 >
-                  Ver projecto ao vivo
+                  Ver projeto ao vivo
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                     <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
                     <polyline points="15,3 21,3 21,9"/>
@@ -260,7 +260,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-secondary"
-                  aria-label={`Ver código do projecto ${project.title} no GitHub`}
+                  aria-label={`Ver código do projeto ${project.title} no GitHub`}
                 >
                   Ver no GitHub
                 </a>
@@ -275,7 +275,7 @@ export default function Projects() {
         <p>
           Quer conhecer o nosso lado técnico?{' '}
           <a href="https://github.com/leomatth" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil GitHub">
-            Veja os nossos projectos e código no GitHub →
+            Veja os nossos projetos e código no GitHub →
           </a>
         </p>
       </div>

@@ -17,14 +17,14 @@ import imgBikecraft from '../assets/projects/bikecraft.jpg'
 /* ─── CONFIGURAÇÃO DE ALTA CONVERSÃO & URGÊNCIA ─── */
 const CONFIG = {
   wa_number: '351935327289',
-  wa_message: 'Olá! Quero aproveitar a promoção da Landing Page em 48h por R$ 199 🚀',
-  vagas_mes_atual: 3,       // Vagas restantes no mês atual
-  vagas_proximo_mes: 10,    // Vagas disponíveis para o próximo mês
-  lps_entregues: 68,        // Total de LPs entregues
-  preco_de: 'R$ 597',       // Preço original riscado
-  preco_por: 'R$ 199',      // Preço promocional à vista
-  preco_parcelado: '12x de R$ 19,99', // Parcelamento
-  obs_parcelamento: '*mediante taxa de juros da operadora de cartão',
+  wa_message: 'Olá! Quero aproveitar a promoção da Landing Page em 48h por 39€ 🚀',
+  vagas_mes_atual: 'Vagas limitadas', // Removido número fixo para cumprir regras PT
+  vagas_proximo_mes: 'Abertas',    
+  lps_entregues: 12,        // Total de LPs entregues
+  preco_de: '99€',       
+  preco_por: '39€',      
+  preco_parcelado: 'Pagamento único', // Parcelamento
+  obs_parcelamento: '*sem taxas ou mensalidades',
 }
 
 const WA_LINK = `https://wa.me/${CONFIG.wa_number}?text=${encodeURIComponent(CONFIG.wa_message)}`
@@ -69,17 +69,17 @@ const problems = [
   {
     icon: '⏳',
     title: 'Agências cobrando caro e pedindo 3 a 4 semanas',
-    desc: 'Você não pode esperar 1 mês para começar a vender. O mercado é rápido e o seu negócio precisa de resultados agora.',
+    desc: 'Não pode esperar 1 mês para começar a vender. O mercado é rápido e o seu negócio precisa de resultados agora.',
   },
 ]
 
 const includes = [
-  { icon: '🎨', title: 'Design Moderno & Responsivo', desc: 'Mobile-first com visual premium adaptado para carregar instantaneamente em qualquer celular.' },
-  { icon: '✍️', title: 'Copy Persuasiva Inclusa', desc: 'Escrevemos os textos focados em conversão. Você só nos diz o que vende.' },
+  { icon: '🎨', title: 'Design Moderno & Responsivo', desc: 'Mobile-first com visual premium adaptado para carregar instantaneamente em qualquer telemóvel.' },
+  { icon: '✍️', title: 'Copy Persuasiva Incluída', desc: 'Escrevemos os textos focados em conversão. Só nos diz o que vende.' },
   { icon: '💬', title: 'Botão WhatsApp Integrado', desc: 'Com mensagem pré-configurada para o cliente já chegar pronto para fechar negócio.' },
   { icon: '⚡', title: 'Alta Velocidade & SEO Base', desc: 'Carregamento leve que reduz o custo por clique dos seus anúncios no Meta e Google.' },
   { icon: '🌐', title: 'Publicação Pronta Online', desc: 'Publicado no seu domínio ou subdomínio exclusivo, pronto para receber visitantes.' },
-  { icon: '🔄', title: '1 Ronda de Ajustes Inclusa', desc: 'Apresentação em 24h + refinamento dentro do prazo estrito de 48 horas.' },
+  { icon: '🔄', title: '1 Ronda de Ajustes Incluída', desc: 'Apresentação em 24h + refinamento dentro do prazo estrito de 48 horas.' },
 ]
 
 const steps = [
@@ -143,7 +143,7 @@ const slideProjects = [
     tag: 'Profissional Liberal',
     title: 'Adriano Advocacia',
     desc: 'Consultoria jurídica e atendimento rápido.',
-    result: '+60 contatos qualificados',
+    result: '+60 contactos qualificados',
     link: '#',
   },
   {
@@ -253,46 +253,46 @@ function ProjectSlider() {
   )
 }
 
-/* ─── PROVA SOCIAL DO BRASIL (SP, RJ, CE, MG) ─── */
+/* ─── PROVA SOCIAL DE PORTUGAL ─── */
 const testimonials = [
   {
     name: 'Dr. Rodrigo Meirelles',
-    role: 'Clínica Odontológica',
-    location: 'São Paulo — SP',
+    role: 'Clínica Dentária',
+    location: 'Lisboa',
     avatar: 'RM',
     stars: 5,
-    text: 'Precisava abrir agenda com urgência para um novo procedimento. Contratei a Sublime-se na terça e na quinta à tarde a LP estava no ar. No primeiro fim de semana captamos 28 leads qualificados!',
+    text: 'Precisava de arranjar clientes com urgência para um novo tratamento. Falei com a equipa na terça e na quinta-feira à tarde a Landing Page já estava online. No primeiro fim de semana conseguimos 28 contactos qualificados!',
   },
   {
     name: 'Camila Vasconcelos',
-    role: 'Studio Beauty & Lash',
-    location: 'Rio de Janeiro — RJ',
+    role: 'Estética & Beleza',
+    location: 'Porto',
     avatar: 'CV',
     stars: 5,
-    text: 'Eu gastava em anúncios direcionando pro Instagram e as pessoas só olhavam as fotos. Com a landing page de 48h, o cliente já cai no WhatsApp pronto pra agendar. O investimento se pagou nos primeiros 3 dias.',
+    text: 'Eu gastava imenso dinheiro em anúncios que iam parar ao Instagram e as pessoas só metiam gosto nas fotos. Com esta página em 48h, os clientes vão diretos ao WhatsApp para agendar. O investimento pagou-se logo nos primeiros dias.',
   },
   {
-    name: 'Diego Albuquerque',
-    role: 'Hamburgueria & Gastronomia',
-    location: 'Fortaleza — CE',
+    name: 'Diogo Albuquerque',
+    role: 'Restaurante & Delivery',
+    location: 'Braga',
     avatar: 'DA',
     stars: 5,
-    text: 'Surpreendente a rapidez e o capricho no celular. A agência da minha cidade pediu 20 dias e um valor absurdo. A Sublime-se entregou em 48h cravadas e o visual ficou de outro nível.',
+    text: 'Fiquei impressionado com a rapidez e a qualidade no telemóvel. Uma agência aqui na zona pedia-me 3 semanas e um valor absurdo. A Sublime-se entregou em 48h e o design ficou espetacular.',
   },
   {
     name: 'Larissa Fontes',
-    role: 'Consultoria & Infoprodutos',
-    location: 'Belo Horizonte — MG',
+    role: 'Consultoria',
+    location: 'Faro',
     avatar: 'LF',
     stars: 5,
-    text: 'A copy que escreveram conectou perfeitamente com meu público. Taxa de cliques excelente e o botão do WhatsApp já chega com mensagem pronta. Recomendo de olhos fechados!',
+    text: 'O texto que escreveram encaixou perfeitamente no meu público-alvo. Tenho tido uma taxa de cliques excelente e o botão do WhatsApp já traz a mensagem pronta. Recomendo sem qualquer dúvida!',
   },
 ]
 
 const faqs = [
   {
     q: 'Como conseguem entregar em apenas 48 horas?',
-    a: 'Nosso fluxo é hiper focado exclusivamente em Landing Pages de 1 página. Eliminamos reuniões desnecessárias, usamos metodologia ágil e templates de alta performance pré-otimizados. Você aprova a prévia em 24h e colocamos no ar em 48h.',
+    a: 'Nosso fluxo é hiper focado exclusivamente em Landing Pages de 1 página. Eliminamos reuniões desnecessárias, usamos metodologia ágil e templates de alta performance pré-otimizados. Aprova a prévia em 24h e colocamos no ar em 48h.',
   },
   {
     q: 'É um site completo ou uma landing page?',
@@ -300,19 +300,19 @@ const faqs = [
   },
   {
     q: 'Preciso ter textos ou imagens prontas?',
-    a: 'Não! Nós cuidamos da redação persuasiva (copywriting) e da seleção de imagens profissionais. Você só nos envia informações básicas sobre seu negócio e proposta.',
+    a: 'Não! Nós cuidamos da redação persuasiva (copywriting) e da seleção de imagens profissionais. Só nos envia informações básicas sobre seu negócio e proposta.',
   },
   {
-    q: 'Como funciona o pagamento de R$ 199?',
-    a: 'O valor de R$ 199 é preço promocional único à vista (PIX ou transferência) ou pode ser parcelado em até 12x no cartão de crédito a partir de R$ 19,99 (com pequena taxa da operadora). Sem mensalidades ou taxas ocultas.',
+    q: 'Como funciona o pagamento dos 39€?',
+    a: 'O valor de 39€ é o preço promocional único (MBWay ou transferência bancária). Sem mensalidades, sem comissões ou taxas ocultas.',
   },
   {
     q: 'E se eu precisar de alterações depois?',
-    a: 'Você tem 1 ciclo completo de revisão incluso antes da entrega final. Além disso, damos 30 dias de suporte e garantia técnica para o site funcionar perfeitamente.',
+    a: 'Tem 1 ciclo completo de revisão incluído antes da entrega final. Além disso, damos 30 dias de suporte e garantia técnica para o site funcionar perfeitamente.',
   },
   {
     q: 'A landing page fica sendo minha propriedade?',
-    a: 'Sim, 100% sua! O domínio, arquivos e código pertencem a você. Sem contratos de fidelidade ou cobranças recorrentes.',
+    a: 'Sim, 100% sua! O domínio, ficheiros e código pertencem-lhe. Sem contratos de fidelidade ou cobranças recorrentes.',
   },
 ]
 
@@ -321,7 +321,7 @@ export default function LP48h() {
   const [openFaq, setOpenFaq] = useState(null)
 
   useEffect(() => {
-    document.title = 'Landing Page em 48h — De R$ 597 por apenas R$ 199 | Sublime-se Soluções'
+    document.title = 'Landing Page em 48h — De 99€ por apenas 39€ | Sublime-se Soluções'
 
     const observerCallback = (entries, observer) => {
       entries.forEach((entry) => {
@@ -357,7 +357,7 @@ export default function LP48h() {
           <div className="h48-topbar-right">
             <div className="h48-scarcity-pill">
               <span className="h48-live-dot" />
-              <span>Mês atual: <strong>3 vagas</strong></span>
+              <span><strong>Vagas Limitadas</strong></span>
             </div>
             <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="h48-btn-wa h48-btn-sm" id="h48-topbar-cta">
               <IconWA /> <span>Garantir vaga</span>
@@ -379,7 +379,7 @@ export default function LP48h() {
               <IconFire /> OFERTA RELÂMPAGO 48 HORAS
             </span>
             <span className="h48-urgency-pill">
-              🔴 Restam {CONFIG.vagas_mes_atual} vagas este mês
+              🔴 {CONFIG.vagas_mes_atual} este mês
             </span>
           </div>
 
@@ -416,8 +416,8 @@ export default function LP48h() {
 
           {/* Barra de Prova Social com Texto Solicitado */}
           <div className="h48-proof-bar h48-reveal">
-            <div className="h48-avatars" aria-label="Clientes atendidos no Brasil">
-              {['SP', 'RJ', 'CE', 'MG', 'PR'].map((l) => (
+            <div className="h48-avatars" aria-label="Clientes atendidos em Portugal">
+              {['LX', 'PT', 'BG', 'FR', 'CB'].map((l) => (
                 <div key={l} className="h48-avatar">{l}</div>
               ))}
             </div>
@@ -464,7 +464,7 @@ export default function LP48h() {
             ))}
           </div>
           <div className="h48-bridge h48-reveal">
-            <p>Se se identificou com qualquer uma dessas situações, <strong>uma Landing Page entregue em 48h por R$ 199 é a solução mais rápida e rentável.</strong></p>
+            <p>Se se identificou com qualquer uma dessas situações, <strong>uma Landing Page entregue em 48h por 39€ é a solução mais rápida e rentável.</strong></p>
           </div>
         </div>
       </section>
@@ -497,7 +497,7 @@ export default function LP48h() {
         <div className="h48-container">
           <div className="h48-reveal">
             <span className="h48-label">Depoimentos & Avaliações</span>
-            <h2 id="h48-test-heading" className="h48-title">Quem contratou, aprovou no Brasil</h2>
+            <h2 id="h48-test-heading" className="h48-title">Quem contratou, aprovou em Portugal</h2>
           </div>
           <div className="h48-testimonials-grid">
             {testimonials.map((t, i) => (
@@ -561,7 +561,7 @@ export default function LP48h() {
                   </div>
                   <div className="h48-price-highlight">
                     Por apenas <span className="h48-big-price">{CONFIG.preco_por}</span>
-                    <span className="h48-price-type">à vista (PIX)</span>
+                    <span className="h48-price-type">pagamento único (MBWay)</span>
                   </div>
                   <div className="h48-price-installments">
                     ou <strong>{CONFIG.preco_parcelado}</strong> no cartão <br />
@@ -572,10 +572,10 @@ export default function LP48h() {
                 <ul className="h48-checklist" aria-label="O que está incluído no pacote">
                   {[
                     'Design profissional responsivo (Mobile + Desktop)',
-                    'Copywriting persuasivo incluso',
+                    'Copywriting persuasivo incluído',
                     'Entrega pontual garantida em 48 horas',
                     'Integração direta com WhatsApp',
-                    '1 ronda de refinamento e ajustes inclusa',
+                    '1 ronda de refinamento e ajustes incluída',
                     'Sem mensalidade — o código e página são seus',
                   ].map((item) => (
                     <li key={item}><IconCheck /> {item}</li>
@@ -595,13 +595,13 @@ export default function LP48h() {
                   <div className="h48-month-slot urgent-slot">
                     <div className="slot-title">
                       <span>Mês Atual</span>
-                      <strong className="red-badge">Apenas {CONFIG.vagas_mes_atual} vagas!</strong>
+                      <strong className="red-badge">{CONFIG.vagas_mes_atual}</strong>
                     </div>
-                    <div className="h48-slots-bar" aria-label={`${CONFIG.vagas_mes_atual} vagas restantes`}>
+                    <div className="h48-slots-bar" aria-label="Vagas limitadas restantes">
                       {[...Array(5)].map((_, i) => (
                         <div
                           key={i}
-                          className={`h48-slot-dot ${i < CONFIG.vagas_mes_atual ? 'dot-urgent' : 'dot-filled'}`}
+                          className={`h48-slot-dot ${i < 2 ? 'dot-urgent' : 'dot-filled'}`}
                         />
                       ))}
                     </div>

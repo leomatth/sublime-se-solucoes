@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="contact">
       <h2>Vamos Conversar?</h2>
       <p className="contact-subtitle">
-        Escolha o canal que preferir para entrar em contato conosco
+        Escolha o canal que preferir para entrar em contacto conosco
       </p>
 
       <div className="contact-methods">

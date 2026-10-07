@@ -24,7 +24,7 @@ const reasons = [
   {
     number: '03',
     title: 'QA como diferencial',
-    body: 'O nosso background em QA permite olhar para o projecto do ponto de vista de testes, bugs e experiência do utilizador — antes de entregar.',
+    body: 'O nosso background em QA permite olhar para o projeto do ponto de vista de testes, bugs e experiência do utilizador — antes de entregar.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.66 0 3.21.45 4.54 1.24"/>

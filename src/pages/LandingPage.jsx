@@ -19,7 +19,7 @@ const problems = [
   {
     emoji: '😟',
     title: 'Perde clientes para a concorrência',
-    desc: 'Quando o cliente pesquisa no Google, encontra o concorrente — não você. Sem site, você é invisível.',
+    desc: 'Quando o cliente pesquisa no Google, encontra o concorrente — não você. Sem site, é invisível.',
   },
   {
     emoji: '📱',
@@ -51,7 +51,7 @@ const steps = [
 const faqs = [
   {
     q: 'Preciso saber de tecnologia?',
-    a: 'Não. Você nos conta sobre o seu negócio e nós tratamos de tudo: design, textos, publicação e configuração técnica.',
+    a: 'Não. Conta-nos sobre o seu negócio e nós tratamos de tudo: design, textos, publicação e configuração técnica.',
   },
   {
     q: 'Quanto tempo demora?',
@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: 'Preciso assinar algum contrato?',
-    a: 'Não. A consulta é gratuita e sem compromisso. Só avançamos se fizer sentido para você.',
+    a: 'Não. A consulta é gratuita e sem compromisso. Só avançamos se fizer sentido para si.',
   },
   {
     q: 'O site fica sendo meu?',

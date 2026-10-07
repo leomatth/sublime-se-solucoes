@@ -5,7 +5,7 @@ const currentYear = new Date().getFullYear()
 const footerLinks = [
   { label: 'Início', id: 'hero' },
   { label: 'Serviços', id: 'services' },
-  { label: 'Projectos', id: 'projects' },
+  { label: 'Projetos', id: 'projects' },
   { label: 'Sobre', id: 'about' },
   { label: 'Contacto', id: 'contact-form' },
 ]
