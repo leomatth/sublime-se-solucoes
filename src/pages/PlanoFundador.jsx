@@ -12,8 +12,18 @@ export default function PlanoFundador() {
   }, []);
 
   const getWaLink = (plan) => {
-    const msg = `Olá! Quero garantir uma das 5 vagas do Plano Fundador (${plan}).`;
+    const msg = `Olá! Vi o Plano Fundador no Instagram e quero garantir uma das vagas (${plan}).`;
     return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+  };
+
+  const trackConversion = (planName) => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'generate_lead', {
+        event_category: 'WhatsApp',
+        event_label: `Plano Fundador - ${planName}`,
+        value: planName === 'Anual' ? 375 : 39
+      });
+    }
   };
 
   return (
@@ -98,7 +108,7 @@ export default function PlanoFundador() {
                 <li><CheckCircle2 size={18} /> Certificado de Segurança SSL</li>
                 <li><CheckCircle2 size={18} /> 4 alterações mensais</li>
               </ul>
-              <a href={getWaLink('Mensal')} className="btn-secondary">Garantir Vaga Mensal</a>
+              <a href={getWaLink('Mensal')} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion('Mensal')} className="btn-secondary">Garantir Vaga Mensal</a>
             </div>
 
             {/* Anual */}
@@ -121,7 +131,7 @@ export default function PlanoFundador() {
                 <li><CheckCircle2 size={18} /> 4 alterações mensais</li>
                 <li><CheckCircle2 size={18} /> Suporte prioritário via WhatsApp</li>
               </ul>
-              <a href={getWaLink('Anual')} className="btn-primary">Garantir Vaga Anual</a>
+              <a href={getWaLink('Anual')} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion('Anual')} className="btn-primary">Garantir Vaga Anual</a>
             </div>
           </div>
           <p className="pricing-note">* A renovação do domínio no ano seguinte tem o custo de 20€ anuais. Alterações não utilizadas não acumulam para o mês seguinte.</p>
