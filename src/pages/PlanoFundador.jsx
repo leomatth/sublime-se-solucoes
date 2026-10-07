@@ -21,7 +21,7 @@ export default function PlanoFundador() {
       window.gtag('event', 'generate_lead', {
         event_category: 'WhatsApp',
         event_label: `Plano Fundador - ${planName}`,
-        value: planName === 'Anual' ? 375 : 39
+        value: planName === 'Anual' ? 490 : 49
       });
     }
   };
@@ -43,9 +43,9 @@ export default function PlanoFundador() {
       <section className="fundador-hero">
         <div className="container">
           <span className="eyebrow">🚀 LANÇAMENTO: PLANO FUNDADOR</span>
-          <h1>O seu site profissional <strong>oferecido</strong>.<br/> Só paga a manutenção.</h1>
+          <h1>Site profissional a partir de <strong>99€</strong>.<br/> Sem surpresas no orçamento.</h1>
           <p className="subtitle">
-            Cansado de orçamentos de 1000€ para um site? No Plano Fundador, nós construímos o seu site profissional de forma totalmente gratuita. Apenas paga o serviço de manutenção mensal para o mantermos rápido, seguro e atualizado.
+            Cansado de orçamentos de 1000€ para um site? No Plano Fundador, criamos a sua presença digital de topo por um valor simbólico de entrada. Depois, apenas paga a manutenção mensal para o mantermos rápido, seguro e atualizado.
           </p>
           <div className="hero-cta">
             <a href="#planos" className="btn-primary">Ver Planos e Preços <ChevronRight size={20} /></a>
@@ -96,10 +96,10 @@ export default function PlanoFundador() {
                 <h3>Plano Mensal</h3>
                 <div className="price">
                   <span className="currency">€</span>
-                  <span className="amount">39</span>
+                  <span className="amount">49</span>
                   <span className="period">/mês</span>
                 </div>
-                <p className="fee">+ 20€ taxa de inscrição única</p>
+                <p className="fee">+ 99€ taxa única de criação</p>
               </div>
               <ul className="features-list">
                 <li><CheckCircle2 size={18} /> Criação do site profissional</li>
@@ -118,10 +118,10 @@ export default function PlanoFundador() {
                 <h3>Plano Anual</h3>
                 <div className="price">
                   <span className="currency">€</span>
-                  <span className="amount">375</span>
+                  <span className="amount">490</span>
                   <span className="period">/ano</span>
                 </div>
-                <p className="fee">Sem taxa de inscrição (poupa 113€)</p>
+                <p className="fee">Sem taxa de criação (poupa 99€)</p>
               </div>
               <ul className="features-list">
                 <li><CheckCircle2 size={18} /> Criação do site profissional</li>
