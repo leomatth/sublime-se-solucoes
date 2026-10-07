@@ -9,7 +9,7 @@ export default function Contact() {
       </p>
 
       <div className="contact-methods">
-        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="contact-card whatsapp">
+        <a href="https://wa.me/351935327289" target="_blank" rel="noopener noreferrer" className="contact-card whatsapp">
           <div className="contact-icon">💬</div>
           <h3>WhatsApp</h3>
           <p>Conversa rápida e direta</p>

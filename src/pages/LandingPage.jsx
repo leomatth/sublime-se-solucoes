@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import '../landing/LandingPage.css'
 
-const WA_LINK = 'https://wa.me/5521976670234?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Sublime-se%20Solu%C3%A7%C3%B5es%20e%20quero%20saber%20mais%20sobre%20criar%20um%20site%20profissional%20para%20o%20meu%20neg%C3%B3cio.'
+const WA_LINK = 'https://wa.me/351935327289?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Sublime-se%20Solu%C3%A7%C3%B5es%20e%20quero%20saber%20mais%20sobre%20criar%20um%20site%20profissional%20para%20o%20meu%20neg%C3%B3cio.'
 
 const WhatsAppIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

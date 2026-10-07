@@ -16,7 +16,7 @@ import imgBikecraft from '../assets/projects/bikecraft.jpg'
 
 /* ─── CONFIGURAÇÃO DE ALTA CONVERSÃO & URGÊNCIA ─── */
 const CONFIG = {
-  wa_number: '5521976670234',
+  wa_number: '351935327289',
   wa_message: 'Olá! Quero aproveitar a promoção da Landing Page em 48h por R$ 199 🚀',
   vagas_mes_atual: 3,       // Vagas restantes no mês atual
   vagas_proximo_mes: 10,    // Vagas disponíveis para o próximo mês

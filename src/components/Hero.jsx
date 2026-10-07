@@ -38,7 +38,7 @@ export default function Hero() {
             {/* WhatsApp — primary, high-conversion CTA */}
             <a
               id="hero-cta-whatsapp"
-              href="https://wa.me/5521976670234?text=Ol%C3%A1%21%20Tenho%20um%20neg%C3%B3cio%20local%20e%20gostaria%20de%20saber%20como%20melhorar%20a%20minha%20presen%C3%A7a%20digital."
+              href="https://wa.me/351935327289?text=Ol%C3%A1%21%20Tenho%20um%20neg%C3%B3cio%20local%20e%20gostaria%20de%20saber%20como%20melhorar%20a%20minha%20presen%C3%A7a%20digital."
               target="_blank"
               rel="noopener noreferrer"
               className="btn hero-btn-whatsapp"
