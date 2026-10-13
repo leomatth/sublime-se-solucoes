@@ -4,6 +4,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import './LP48h.css'
+import Seo from '../components/Seo'
 
 import imgEuroWine from '../assets/projects/euro_wine.jpg'
 import imgYgorNutri from '../assets/projects/ygor_nutri.jpg'
@@ -321,8 +322,6 @@ export default function LP48h() {
   const [openFaq, setOpenFaq] = useState(null)
 
   useEffect(() => {
-    document.title = 'Landing Page em 48h — De 99€ por apenas 39€ | Sublime-se Soluções'
-
     const observerCallback = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -347,6 +346,12 @@ export default function LP48h() {
 
   return (
     <div className="h48-root">
+      {/* a mesma página serve /lp/48h, /48h e /landing-pages-48h: o canonical aponta para uma só */}
+      <Seo
+        path="/landing-pages-48h"
+        title="Landing Page em 48h — De 99€ por apenas 39€ | Sublime-se Soluções"
+        description="Landing page profissional pronta em 48 horas, com WhatsApp integrado e design para telemóvel. Para pequenos negócios em Portugal."
+      />
 
       {/* ── TOPBAR COM URGÊNCIA REAL & BOTÃO COMPACTO ── */}
       <header className="h48-topbar">

@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { ChevronRight, CheckCircle2 } from 'lucide-react';
 import './PlanoFundador.css';
+import Seo from '../components/Seo';
 
 const WA_NUMBER = '351935327289';
 
@@ -36,10 +37,6 @@ export default function PlanoFundador() {
   const [isAnnual, setIsAnnual] = useState(true);
   const plan = isAnnual ? PLANS.Anual : PLANS.Mensal;
 
-  useEffect(() => {
-    document.title = 'Plano Fundador — Site Profissional Grátis + Manutenção | Sublime-se Soluções';
-  }, []);
-
   const getWaLink = (plan) => {
     const msg = `Olá! Vi o Plano Fundador no Instagram e quero garantir uma das vagas (${plan}).`;
     return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
@@ -57,6 +54,11 @@ export default function PlanoFundador() {
 
   return (
     <div className="fundador-page">
+      <Seo
+        path="/plano-fundador"
+        title="Plano Fundador — Site Profissional a partir de 99€ | Sublime-se Soluções"
+        description="Site profissional para o seu negócio em Portugal a partir de 99€, com domínio, alojamento, SSL e 4 alterações por mês incluídos. Apenas 5 vagas."
+      />
       {/* HEADER */}
       <header className="fundador-header">
         <div className="container">

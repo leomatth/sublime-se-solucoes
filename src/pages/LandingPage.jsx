@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Seo from '../components/Seo'
 import '../landing/LandingPage.css'
 
 const WA_LINK = 'https://wa.me/351935327289?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Sublime-se%20Solu%C3%A7%C3%B5es%20e%20quero%20saber%20mais%20sobre%20criar%20um%20site%20profissional%20para%20o%20meu%20neg%C3%B3cio.'
@@ -86,6 +87,11 @@ export default function LandingPage() {
 
   return (
     <div className="lp-root">
+      <Seo
+        path="/lp"
+        title="Sites para Pequenos Negócios Locais em Portugal · Sublime-se"
+        description="Criamos o site da sua empresa em menos de 7 dias, com WhatsApp integrado, galeria de serviços e Google Maps, pronto para atrair e converter clientes."
+      />
 
       {/* ── TOPBAR (minimal, no nav) ── */}
       <header className="lp-topbar">

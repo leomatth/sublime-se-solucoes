@@ -13,6 +13,7 @@ import Process from './components/Process'
 import ContactForm from './components/ContactForm'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
+import Seo from './components/Seo'
 import LandingPage from './pages/LandingPage'
 import LP48h from './pages/LP48h'
 import PlanoFundador from './pages/PlanoFundador'
@@ -38,6 +39,11 @@ function HomePage() {
 
   return (
     <div className="app">
+      <Seo
+        path="/"
+        title="Criação de Websites e Landing Pages em Portugal · Sublime-se"
+        description="Criação de websites profissionais, landing pages e aplicações web para empresas. Design moderno, rápido e focado em resultados. Entre em contacto."
+      />
       <Header />
       <main>
         <Hero />
