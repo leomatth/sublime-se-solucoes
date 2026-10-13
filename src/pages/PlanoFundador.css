@@ -263,6 +263,13 @@
   margin-bottom: 10px;
 }
 
+.price-equiv {
+  margin-top: 8px;
+  color: #41d1ff;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
 .fee {
   margin-top: 15px;
   color: #a0a0ab;

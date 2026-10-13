@@ -4,8 +4,37 @@ import './PlanoFundador.css';
 
 const WA_NUMBER = '351935327289';
 
+const BASE_FEATURES = [
+  'Criação do site profissional',
+  'Domínio (.com) no 1º ano*',
+  'Alojamento de alta velocidade',
+  'Certificado de Segurança SSL',
+  '4 alterações mensais',
+];
+
+const PLANS = {
+  Mensal: {
+    name: 'Mensal',
+    title: 'Plano Mensal',
+    amount: '49',
+    period: '/mês',
+    fee: '+ 99€ taxa única de criação',
+    features: BASE_FEATURES,
+  },
+  Anual: {
+    name: 'Anual',
+    title: 'Plano Anual',
+    amount: '490',
+    period: '/ano',
+    equiv: 'Equivale a 40,83€/mês',
+    fee: 'Sem taxa de criação (poupa 99€)',
+    features: [...BASE_FEATURES, 'Suporte prioritário via WhatsApp'],
+  },
+};
+
 export default function PlanoFundador() {
   const [isAnnual, setIsAnnual] = useState(true);
+  const plan = isAnnual ? PLANS.Anual : PLANS.Mensal;
 
   useEffect(() => {
     document.title = 'Plano Fundador — Site Profissional Grátis + Manutenção | Sublime-se Soluções';
@@ -90,48 +119,24 @@ export default function PlanoFundador() {
           </div>
 
           <div className="pricing-cards">
-            {/* Mensal */}
-            <div className={`pricing-card ${!isAnnual ? 'highlight' : ''}`}>
-              <div className="card-header">
-                <h3>Plano Mensal</h3>
-                <div className="price">
-                  <span className="currency">€</span>
-                  <span className="amount">49</span>
-                  <span className="period">/mês</span>
-                </div>
-                <p className="fee">+ 99€ taxa única de criação</p>
-              </div>
-              <ul className="features-list">
-                <li><CheckCircle2 size={18} /> Criação do site profissional</li>
-                <li><CheckCircle2 size={18} /> Domínio (.com) no 1º ano*</li>
-                <li><CheckCircle2 size={18} /> Alojamento de alta velocidade</li>
-                <li><CheckCircle2 size={18} /> Certificado de Segurança SSL</li>
-                <li><CheckCircle2 size={18} /> 4 alterações mensais</li>
-              </ul>
-              <a href={getWaLink('Mensal')} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion('Mensal')} className="btn-secondary">Garantir Vaga Mensal</a>
-            </div>
-
-            {/* Anual */}
-            <div className={`pricing-card ${isAnnual ? 'highlight popular' : ''}`}>
+            <div className="pricing-card highlight popular">
               {isAnnual && <div className="popular-badge">Mais Escolhido</div>}
               <div className="card-header">
-                <h3>Plano Anual</h3>
+                <h3>{plan.title}</h3>
                 <div className="price">
                   <span className="currency">€</span>
-                  <span className="amount">490</span>
-                  <span className="period">/ano</span>
+                  <span className="amount">{plan.amount}</span>
+                  <span className="period">{plan.period}</span>
                 </div>
-                <p className="fee">Sem taxa de criação (poupa 99€)</p>
+                {plan.equiv && <p className="price-equiv">{plan.equiv}</p>}
+                <p className="fee">{plan.fee}</p>
               </div>
               <ul className="features-list">
-                <li><CheckCircle2 size={18} /> Criação do site profissional</li>
-                <li><CheckCircle2 size={18} /> Domínio (.com) no 1º ano*</li>
-                <li><CheckCircle2 size={18} /> Alojamento de alta velocidade</li>
-                <li><CheckCircle2 size={18} /> Certificado de Segurança SSL</li>
-                <li><CheckCircle2 size={18} /> 4 alterações mensais</li>
-                <li><CheckCircle2 size={18} /> Suporte prioritário via WhatsApp</li>
+                {plan.features.map((f) => (
+                  <li key={f}><CheckCircle2 size={18} /> {f}</li>
+                ))}
               </ul>
-              <a href={getWaLink('Anual')} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion('Anual')} className="btn-primary">Garantir Vaga Anual</a>
+              <a href={getWaLink(plan.name)} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion(plan.name)} className="btn-primary">Garantir Vaga {plan.name}</a>
             </div>
           </div>
           <p className="pricing-note">* A renovação do domínio no ano seguinte tem o custo de 20€ anuais. Alterações não utilizadas não acumulam para o mês seguinte.</p>
