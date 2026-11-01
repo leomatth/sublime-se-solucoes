@@ -42,8 +42,8 @@ function HomePage() {
     <div className="app">
       <Seo
         path="/"
-        title="Criação de Websites e Landing Pages em Portugal · Sublime-se"
-        description="Criação de websites profissionais, landing pages e aplicações web para empresas. Design moderno, rápido e focado em resultados. Entre em contacto."
+        title="Criação de Websites e Landing Pages no Brasil e em Portugal · Sublime-se"
+        description="Criação de websites profissionais, landing pages e aplicações web para empresas no Brasil e em Portugal. Design moderno, rápido e focado em resultados. Fale connosco."
       />
       <Header />
       <main>
