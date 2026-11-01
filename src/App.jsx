@@ -17,6 +17,7 @@ import Seo from './components/Seo'
 import LandingPage from './pages/LandingPage'
 import LP48h from './pages/LP48h'
 import PlanoFundador from './pages/PlanoFundador'
+import Apresentacao from './pages/Apresentacao'
 
 function HomePage() {
   useEffect(() => {
@@ -69,6 +70,7 @@ export const routes = [
   { path: "/48h", element: <LP48h /> },
   { path: "/landing-pages-48h", element: <LP48h /> },
   { path: "/plano-fundador", element: <PlanoFundador /> },
+  { path: "/apresentacao", element: <Apresentacao /> },
   { path: "*", element: <Navigate to="/" replace /> }
 ];
 

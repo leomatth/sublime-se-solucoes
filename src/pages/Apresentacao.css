@@ -1,0 +1,483 @@
+.apr-page {
+  --apr-bg: #0a0a0f;
+  --apr-surface: rgba(255, 255, 255, 0.05);
+  --apr-border: rgba(255, 255, 255, 0.1);
+  --apr-text: #fff;
+  --apr-muted: rgba(255, 255, 255, 0.65);
+  --apr-accent: #41d1ff;
+  --apr-warm: #ffa800;
+
+  position: fixed;
+  inset: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--apr-text);
+  background:
+    radial-gradient(circle at 85% 10%, rgba(65, 209, 255, 0.12), transparent 45%),
+    radial-gradient(circle at 10% 90%, rgba(255, 168, 0, 0.08), transparent 40%),
+    var(--apr-bg);
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-y;
+}
+
+.apr-stage {
+  position: absolute;
+  inset: 0 0 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.apr-page.with-notes .apr-stage {
+  bottom: 200px;
+}
+
+.apr-slide {
+  width: 100%;
+  max-width: 1100px;
+  max-height: 100%;
+  padding: 32px 48px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+/* ---------- Capa ---------- */
+.apr-cover {
+  text-align: center;
+}
+
+.apr-cover-logo {
+  height: 110px;
+  margin-bottom: 36px;
+  -webkit-touch-callout: none;
+}
+
+.apr-cover h1 {
+  font-size: clamp(2.5rem, 6.5vw, 5rem);
+  line-height: 1.05;
+  font-weight: 800;
+  margin: 0 0 24px;
+}
+
+.apr-cover h1 strong {
+  color: var(--apr-accent);
+}
+
+.apr-lead {
+  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+  color: var(--apr-muted);
+  margin: 0;
+}
+
+/* ---------- Conteúdo ---------- */
+.apr-eyebrow {
+  display: inline-block;
+  color: var(--apr-warm);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.apr-content h2 {
+  font-size: clamp(2rem, 4.6vw, 3.6rem);
+  line-height: 1.1;
+  font-weight: 800;
+  margin: 0 0 40px;
+  max-width: 900px;
+}
+
+.apr-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(65, 209, 255, 0.12);
+  color: var(--apr-accent);
+}
+
+.apr-icon-lg {
+  width: 68px;
+  height: 68px;
+  border-radius: 18px;
+}
+
+.apr-items,
+.apr-bullets,
+.apr-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.apr-items li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+  padding: 14px 0;
+}
+
+.apr-bullets li {
+  position: relative;
+  padding: 12px 0 12px 36px;
+  font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+}
+
+.apr-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: var(--apr-accent);
+}
+
+.apr-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.apr-card {
+  background: var(--apr-surface);
+  border: 1px solid var(--apr-border);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.apr-card h3 {
+  font-size: 1.5rem;
+  margin: 20px 0 8px;
+}
+
+.apr-card p {
+  color: var(--apr-muted);
+  font-size: 1.1rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* ---------- Portfólio ---------- */
+.apr-portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.apr-portfolio figure {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--apr-border);
+  background: var(--apr-surface);
+}
+
+.apr-portfolio img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+  pointer-events: none;
+}
+
+.apr-portfolio figcaption {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  color: var(--apr-muted);
+}
+
+/* ---------- Processo ---------- */
+.apr-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.apr-steps li {
+  position: relative;
+  background: var(--apr-surface);
+  border: 1px solid var(--apr-border);
+  border-radius: 18px;
+  padding: 24px 20px;
+}
+
+.apr-step-num {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.apr-steps h3 {
+  font-size: 1.3rem;
+  margin: 16px 0 6px;
+}
+
+.apr-steps p {
+  margin: 0;
+  color: var(--apr-muted);
+  line-height: 1.4;
+}
+
+.apr-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 28px 0 0;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: rgba(255, 168, 0, 0.12);
+  color: var(--apr-warm);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* ---------- Preços ---------- */
+.apr-prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.apr-price {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--apr-surface);
+  border: 1px solid var(--apr-border);
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.apr-price-label {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.apr-price-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--apr-accent);
+}
+
+.apr-price-value small {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--apr-muted);
+}
+
+.apr-price-note {
+  color: var(--apr-muted);
+  font-size: 0.95rem;
+}
+
+.apr-footnote {
+  margin: 24px 0 0;
+  color: var(--apr-muted);
+  font-size: 1rem;
+}
+
+/* ---------- Contato ---------- */
+.apr-cta {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.apr-qr {
+  width: 220px;
+  height: 220px;
+  padding: 12px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.apr-cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.apr-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 32px;
+  border-radius: 999px;
+  background: #25d366;
+  color: #0a0a0f;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.apr-site {
+  font-size: 1.3rem;
+  color: var(--apr-muted);
+}
+
+/* ---------- Controles ---------- */
+.apr-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.apr-page.with-notes .apr-dots {
+  bottom: 216px;
+}
+
+.apr-dots button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: width 0.25s, background 0.25s;
+}
+
+.apr-dots button.active {
+  width: 28px;
+  background: var(--apr-accent);
+}
+
+.apr-fs {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--apr-border);
+  border-radius: 12px;
+  background: var(--apr-surface);
+  color: var(--apr-muted);
+  cursor: pointer;
+}
+
+.apr-toast {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.95rem;
+}
+
+.apr-notes {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 200px;
+  padding: 16px 24px;
+  overflow-y: auto;
+  background: #14141c;
+  border-top: 1px solid var(--apr-border);
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.apr-notes span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--apr-warm);
+}
+
+.apr-notes p {
+  margin: 8px 0 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* ---------- Retrato / ecrãs menores ---------- */
+@media (max-width: 820px) {
+  .apr-slide {
+    padding: 24px 20px;
+  }
+
+  .apr-cards,
+  .apr-prices {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .apr-cards .apr-card:last-child {
+    grid-column: span 2;
+  }
+
+  .apr-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .apr-portfolio {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .apr-cta {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .apr-cta-actions {
+    align-items: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .apr-cards,
+  .apr-prices,
+  .apr-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .apr-cards .apr-card:last-child {
+    grid-column: auto;
+  }
+}
+
+@media (max-height: 860px) and (min-width: 821px) {
+  .apr-slide {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .apr-content h2 {
+    margin-bottom: 24px;
+  }
+
+  .apr-portfolio img {
+    aspect-ratio: 16 / 7;
+  }
+
+  .apr-price {
+    padding: 16px 20px;
+    gap: 2px;
+  }
+}
