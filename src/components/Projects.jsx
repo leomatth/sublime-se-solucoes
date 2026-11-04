@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react'
 import CoverflowGallery from './CoverflowGallery'
 import './Projects.css'
 
+import imgIguia from '../assets/projects/iguia.jpg'
 import imgYgorNutri from '../assets/projects/ygor_nutri.jpg'
 
 import imgInovaDigital from '../assets/projects/inova_digital.jpg'
@@ -15,6 +16,7 @@ import imgVioletribute from '../assets/projects/violetribute.jpg'
 import imgMendozaWine from '../assets/projects/mendoza_wine.jpg'
 
 const images = {
+  'iguia': imgIguia,
   'ygor-nutri': imgYgorNutri,
   'inova-digital': imgInovaDigital,
   'euro-wine': imgEuroWine,
@@ -28,6 +30,18 @@ const images = {
 }
 
 const projects = [
+  {
+    id: 'iguia',
+    category: 'Site Institucional',
+    title: 'IGUIA Consultoria em Saúde',
+    problem: 'Consultoria de Odontologia do Trabalho, Hospitalar e Auditoria Odontológica no Rio de Janeiro, com atuação desde 2008, precisava apresentar os serviços para empresas, hospitais e operadoras de saúde.',
+    solution: 'Site institucional com os serviços, a história da fundadora, palestras, artigos e contato, pensado para RH, saúde ocupacional e gestores hospitalares.',
+    tags: ['React', 'Site Institucional', 'Saúde', 'Responsivo'],
+    link: null,
+    demo: null,
+    color: '#1b8f9e',
+    gradient: 'linear-gradient(135deg, #041f24 0%, #08343b 50%, #03171b 100%)',
+  },
   {
     id: 'ygor-nutri',
     category: 'Website Profissional',
@@ -56,7 +70,7 @@ const projects = [
     id: 'euro-wine',
     category: 'Vitrine Digital',
     title: 'Euro Wine Experience',
-    problem: 'Empresa de experiências enogastronómicas precisava de uma vitrine premium.',
+    problem: 'Empresa de experiências enogastronômicas precisava de uma vitrine premium.',
     solution: 'Design premium com animações suaves, galeria interativa e identidade visual sofisticada.',
     tags: ['React', 'Vite', 'Animações'],
     link: 'https://github.com/leomatth',
@@ -141,7 +155,7 @@ const projects = [
     category: 'Vitrine Premium',
     title: 'Mendoza Wine Dream',
     problem: 'Adega ou experiência vinícola da região de Mendoza sem uma vitrine digital à altura do produto.',
-    solution: 'Website premium com design sofisticado, galeria de produtos e experiência visual que reflecte a qualidade e origem dos vinhos.',
+    solution: 'Website premium com design sofisticado, galeria de produtos e experiência visual que reflete a qualidade e origem dos vinhos.',
     tags: ['React', 'Vite', 'Design Premium', 'UI/UX'],
     link: 'https://github.com/leomatth/mendoza-wine-dream',
     demo: null,

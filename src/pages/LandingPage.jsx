@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Seo from '../components/Seo'
 import '../landing/LandingPage.css'
 
-const WA_LINK = 'https://wa.me/351935327289?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Sublime-se%20Solu%C3%A7%C3%B5es%20e%20quero%20saber%20mais%20sobre%20criar%20um%20site%20profissional%20para%20meu%20neg%C3%B3cio.'
+const WA_LINK = 'https://wa.me/351937700520?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Sublime-se%20Solu%C3%A7%C3%B5es%20e%20quero%20saber%20mais%20sobre%20criar%20um%20site%20profissional%20para%20meu%20neg%C3%B3cio.'
 
 const WhatsAppIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -131,7 +131,7 @@ export default function LandingPage() {
                   <div key={l} className="lp-avatar">{l}</div>
                 ))}
               </div>
-              <p><strong>+27 negócios</strong> já transformaram a presença digital com a Sublime-se</p>
+              <p><strong>Projetos entregues</strong> para negócios no Brasil e em Portugal</p>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@ export default function LandingPage() {
         <div className="lp-container">
           <div className="lp-reveal">
             <span className="lp-section-label">Projetos reais</span>
-            <h2 id="lp-proof-heading" className="lp-section-title">Sites que já criámos</h2>
+            <h2 id="lp-proof-heading" className="lp-section-title">Sites que já criamos</h2>
           </div>
           <div className="lp-proof-grid">
             <a href="https://eurowineexperience.vercel.app/" target="_blank" rel="noopener noreferrer" className="lp-proof-card lp-reveal" aria-label="Ver projeto Euro Wine Experience">
@@ -214,19 +214,15 @@ export default function LandingPage() {
                 <p className="lp-proof-desc">Landing page de alta conversão para profissional liberal com agenda e WhatsApp direto.</p>
               </div>
             </a>
-            {/* Depoimento */}
-            <div className="lp-testimonial lp-reveal" style={{ animationDelay: '0.2s' }}>
-              <div className="lp-testimonial-stars" aria-label="5 estrelas">★★★★★</div>
-              <blockquote className="lp-testimonial-text">
-                "Antes do site, os clientes perguntavam o preço pelo Instagram e muitos desistiam. Depois do site, as reservas aumentaram e os clientes chegam já prontos para marcar."
-              </blockquote>
-              <cite className="lp-testimonial-author">
-                <div className="lp-testimonial-avatar" aria-hidden="true">M</div>
-                <div>
-                  <strong>Maria S.</strong>
-                  <span>Salão de Beleza — Lisboa</span>
-                </div>
-              </cite>
+            <div className="lp-proof-card lp-reveal" style={{ animationDelay: '0.2s' }} aria-label="Projeto IGUIA Consultoria em Saúde">
+              <div className="lp-proof-img-wrap">
+                <img src="/logo.png" alt="IGUIA Consultoria em Saúde" className="lp-proof-placeholder" aria-hidden="true" />
+              </div>
+              <div className="lp-proof-info">
+                <span className="lp-proof-tag">Site Institucional</span>
+                <h3 className="lp-proof-name">IGUIA Consultoria em Saúde</h3>
+                <p className="lp-proof-desc">Site para consultoria de Odontologia do Trabalho, Hospitalar e Auditoria no Rio de Janeiro, com serviços, artigos e contato.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -261,15 +257,15 @@ export default function LandingPage() {
             <div className="lp-orb lp-orb-offer" aria-hidden="true" />
             <span className="lp-section-label" style={{ color: '#f19f00' }}>Pacote de entrada</span>
             <h2 id="lp-offer-heading" className="lp-offer-title">
-              Site profissional completo<br />a partir de <span style={{ color: '#f19f00' }}>R$&nbsp;997</span>
+              Site profissional completo<br />a partir de <span style={{ color: '#f19f00' }}>R$&nbsp;1.500</span>
             </h2>
 
             {/* Price anchor */}
             <div className="lp-price-anchor lp-reveal">
               <div className="lp-price-block">
                 <div className="lp-price-from">A partir de</div>
-                <div className="lp-price-value">R$ 997</div>
-                <div className="lp-price-note">pagamento único · sem mensalidades</div>
+                <div className="lp-price-value">R$ 1.500</div>
+                <div className="lp-price-note">implantação · hospedagem e manutenção R$ 60/mês</div>
               </div>
               <div className="lp-price-divider" aria-hidden="true" />
               <ul className="lp-price-includes" aria-label="O que está incluído">

@@ -21,7 +21,7 @@ import imgGlamuor from '../assets/projects/glamuor.jpg';
 // ?roteiro=1 mostra a fala de cada slide em baixo, para ensaiar.
 // A fala de cada slide (notes) é a mesma do ROTEIRO_APRESENTACAO.md.
 
-const WA_NUMBER = '351935327289';
+const WA_NUMBER = '351937700520';
 const WA_MESSAGE = 'Olá! Vi a apresentação da Sublime-se com a Carla e quero um diagnóstico gratuito para o meu negócio.';
 const SITE_SHORT = 'solucoes.sublime-se.com';
 

@@ -3,7 +3,7 @@ import { ChevronRight, CheckCircle2 } from 'lucide-react';
 import './PlanoFundador.css';
 import Seo from '../components/Seo';
 
-const WA_NUMBER = '351935327289';
+const WA_NUMBER = '351937700520';
 
 const BASE_FEATURES = [
   'Criação do site profissional',

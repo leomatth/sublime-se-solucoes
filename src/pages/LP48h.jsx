@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import './LP48h.css'
 import Seo from '../components/Seo'
 
+import imgIguia from '../assets/projects/iguia.jpg'
 import imgEuroWine from '../assets/projects/euro_wine.jpg'
 import imgYgorNutri from '../assets/projects/ygor_nutri.jpg'
 import imgInovaDigital from '../assets/projects/inova_digital.jpg'
@@ -13,15 +14,13 @@ import imgEliasLanches from '../assets/projects/elias_lanches.jpg'
 import imgGlamuor from '../assets/projects/glamuor.jpg'
 import imgMendozaWine from '../assets/projects/mendoza_wine.jpg'
 import imgAdriano from '../assets/projects/adriano.jpg'
-import imgBikecraft from '../assets/projects/bikecraft.jpg'
 
 /* ─── CONFIGURAÇÃO DE ALTA CONVERSÃO & URGÊNCIA ─── */
 const CONFIG = {
-  wa_number: '351935327289',
+  wa_number: '351937700520',
   wa_message: 'Olá! Quero aproveitar a promoção da Landing Page em 48h por R$ 300.',
   vagas_mes_atual: 'Vagas limitadas', // Removido número fixo para cumprir regras PT
   vagas_proximo_mes: 'Abertas',    
-  lps_entregues: 12,        // Total de LPs entregues
   preco_de: 'R$ 500',       
   preco_por: 'R$ 300',      
   preco_parcelado: 'Pix ou MB WAY', // Formas de pagamento
@@ -92,68 +91,68 @@ const steps = [
 /* ─── SLIDER DE PROJETOS REAIS (SKIPER 54 STYLE) ─── */
 const slideProjects = [
   {
+    src: imgIguia,
+    tag: 'Saúde & Consultoria',
+    title: 'IGUIA Consultoria em Saúde',
+    desc: 'Odontologia do Trabalho, Hospitalar e Auditoria no Rio de Janeiro.',
+    result: 'Site institucional com serviços, artigos e contato',
+    link: '#',
+  },
+  {
     src: imgEuroWine,
     tag: 'Experiência & Eventos',
     title: 'Euro Wine Experience',
-    desc: 'Reservas premium com agendamento direto.',
-    result: '+120 reservas no 1º mês',
+    desc: 'Vitrine premium de experiências enogastronômicas.',
+    result: 'Galeria, reservas e WhatsApp integrado',
     link: 'https://eurowineexperience.vercel.app/',
   },
   {
     src: imgYgorNutri,
-    tag: 'Saúde & Consultoria',
-    title: 'Ygor Azevedo — Nutrição',
-    desc: 'Captação de pacientes e consultas online.',
-    result: 'Conversão acima de 14.8%',
+    tag: 'Saúde & Nutrição',
+    title: 'Ygor Azevedo Nutri',
+    desc: 'Site profissional para nutricionista.',
+    result: 'Serviços e contato direto pelo WhatsApp',
     link: 'https://ygorazevedo.vercel.app/',
   },
   {
     src: imgInovaDigital,
     tag: 'Serviços & B2B',
-    title: 'Inova Digital Solutions',
-    desc: 'Página corporativa moderna com formulário.',
-    result: '+45 propostas fechadas',
+    title: 'Inova Digital',
+    desc: 'Landing page institucional para agência de marketing.',
+    result: 'Seções de serviços, portfólio e contato',
     link: 'https://inova-digital.vercel.app/',
   },
   {
     src: imgEliasLanches,
     tag: 'Gastronomia & Delivery',
-    title: 'Elias Lanches & Burger',
-    desc: 'Cardápio interativo e pedidos no WhatsApp.',
-    result: '+300 pedidos semanais',
-    link: '#',
+    title: 'Elias Lanches',
+    desc: 'Cardápio digital com categorias e fotos.',
+    result: 'Pedidos pelo WhatsApp',
+    link: 'https://elias-lanches.ola.click/',
   },
   {
     src: imgGlamuor,
-    tag: 'Moda & Estética',
-    title: 'Glamuor Studio VIP',
-    desc: 'Catálogo de procedimentos e agendamentos.',
-    result: 'Agenda lotada em 2 semanas',
-    link: '#',
+    tag: 'Beleza & Estética',
+    title: 'Glamuor Flor Salão',
+    desc: 'Landing page com catálogo de serviços e preços.',
+    result: 'Botão de agendamento',
+    link: 'https://glamuorflor-landing-page.vercel.app/',
   },
   {
     src: imgMendozaWine,
-    tag: 'Turismo & Viagens',
-    title: 'Mendoza Wine Tour',
-    desc: 'Roteiros internacionais e pacotes.',
-    result: 'ROI de 6.4x no Meta Ads',
+    tag: 'Vinhos & Turismo',
+    title: 'Mendoza Wine Dream',
+    desc: 'Vitrine premium de vinhos de Mendoza.',
+    result: 'Galeria de produtos e design sofisticado',
     link: '#',
   },
   {
     src: imgAdriano,
-    tag: 'Profissional Liberal',
-    title: 'Adriano Advocacia',
-    desc: 'Consultoria jurídica e atendimento rápido.',
-    result: '+60 contatos qualificados',
-    link: '#',
-  },
-  {
-    src: imgBikecraft,
-    tag: 'E-commerce & Produtos',
-    title: 'Bikecraft Elétricas',
-    desc: 'Showroom de modelos e orçamento direto.',
-    result: '+80 orçamentos no WhatsApp',
-    link: '#',
+    tag: 'Portfólio Profissional',
+    title: 'Adriano Dantas',
+    desc: 'Portfólio de profissional de tecnologia.',
+    result: 'Projetos, experiência e formulário de contato',
+    link: 'https://adrianodantas.vercel.app/',
   },
 ]
 
@@ -253,42 +252,6 @@ function ProjectSlider() {
     </div>
   )
 }
-
-/* ─── PROVA SOCIAL DE PORTUGAL ─── */
-const testimonials = [
-  {
-    name: 'Dr. Rodrigo Meirelles',
-    role: 'Clínica Dentária',
-    location: 'Lisboa',
-    avatar: 'RM',
-    stars: 5,
-    text: 'Precisava de arranjar clientes com urgência para um novo tratamento. Falei com a equipa na terça e na quinta-feira à tarde a Landing Page já estava online. No primeiro fim de semana conseguimos 28 contactos qualificados!',
-  },
-  {
-    name: 'Camila Vasconcelos',
-    role: 'Estética & Beleza',
-    location: 'Porto',
-    avatar: 'CV',
-    stars: 5,
-    text: 'Eu gastava imenso dinheiro em anúncios que iam parar ao Instagram e as pessoas só metiam gosto nas fotos. Com esta página em 48h, os clientes vão diretos ao WhatsApp para agendar. O investimento pagou-se logo nos primeiros dias.',
-  },
-  {
-    name: 'Diogo Albuquerque',
-    role: 'Restaurante & Delivery',
-    location: 'Braga',
-    avatar: 'DA',
-    stars: 5,
-    text: 'Fiquei impressionado com a rapidez e a qualidade no telemóvel. Uma agência aqui na zona pedia-me 3 semanas e um valor absurdo. A Sublime-se entregou em 48h e o design ficou espetacular.',
-  },
-  {
-    name: 'Larissa Fontes',
-    role: 'Consultoria',
-    location: 'Faro',
-    avatar: 'LF',
-    stars: 5,
-    text: 'O texto que escreveram encaixou perfeitamente no meu público-alvo. Tenho tido uma taxa de cliques excelente e o botão do WhatsApp já traz a mensagem pronta. Recomendo sem qualquer dúvida!',
-  },
-]
 
 const faqs = [
   {
@@ -422,12 +385,12 @@ export default function LP48h() {
           {/* Barra de Prova Social com Texto Solicitado */}
           <div className="h48-proof-bar h48-reveal">
             <div className="h48-avatars" aria-label="Clientes atendidos">
-              {['LX', 'PT', 'BG', 'FR', 'CB'].map((l) => (
+              {['IG', 'EW', 'YA', 'ID', 'EL'].map((l) => (
                 <div key={l} className="h48-avatar">{l}</div>
               ))}
             </div>
             <div className="h48-proof-text">
-              <strong>+{CONFIG.lps_entregues} Landing Pages entregues,</strong> confira alguns projetos.
+              <strong>Projetos entregues:</strong> confira alguns.
             </div>
           </div>
         </div>
@@ -490,31 +453,6 @@ export default function LP48h() {
                 <div>
                   <h3 className="h48-include-title">{item.title}</h3>
                   <p className="h48-include-desc">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── PROVA SOCIAL DO BRASIL: DEPOIMENTOS EM GRID (SP, RJ, CE, MG) ── */}
-      <section className="h48-section h48-testimonials-section" aria-labelledby="h48-test-heading">
-        <div className="h48-container">
-          <div className="h48-reveal">
-            <span className="h48-label">Depoimentos & Avaliações</span>
-            <h2 id="h48-test-heading" className="h48-title">Quem contratou, aprovou</h2>
-          </div>
-          <div className="h48-testimonials-grid">
-            {testimonials.map((t, i) => (
-              <div key={i} className="h48-test-card h48-reveal">
-                <div className="h48-stars" aria-label="5 estrelas">★★★★★</div>
-                <p className="h48-test-text">"{t.text}"</p>
-                <div className="h48-test-author">
-                  <div className="h48-test-avatar">{t.avatar}</div>
-                  <div>
-                    <strong>{t.name}</strong>
-                    <span>{t.role} · <span className="h48-badge-city">{t.location}</span></span>
-                  </div>
                 </div>
               </div>
             ))}
