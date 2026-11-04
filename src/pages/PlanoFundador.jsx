@@ -8,7 +8,7 @@ const WA_NUMBER = '351935327289';
 const BASE_FEATURES = [
   'Criação do site profissional',
   'Domínio (.com) no 1º ano*',
-  'Alojamento de alta velocidade',
+  'Hospedagem de alta velocidade',
   'Certificado de Segurança SSL',
   '4 alterações mensais',
 ];
@@ -17,18 +17,20 @@ const PLANS = {
   Mensal: {
     name: 'Mensal',
     title: 'Plano Mensal',
-    amount: '49',
+    amount: '140',
+    value: 140,
     period: '/mês',
-    fee: '+ 99€ taxa única de criação',
+    fee: '+ R$ 500 de taxa única de criação',
     features: BASE_FEATURES,
   },
   Anual: {
     name: 'Anual',
     title: 'Plano Anual',
-    amount: '490',
+    amount: '1.400',
+    value: 1400,
     period: '/ano',
-    equiv: 'Equivale a 40,83€/mês',
-    fee: 'Sem taxa de criação (poupa 99€)',
+    equiv: 'Equivale a R$ 116,67/mês',
+    fee: 'Sem taxa de criação (economia de R$ 500)',
     features: [...BASE_FEATURES, 'Suporte prioritário via WhatsApp'],
   },
 };
@@ -47,7 +49,8 @@ export default function PlanoFundador() {
       window.gtag('event', 'generate_lead', {
         event_category: 'WhatsApp',
         event_label: `Plano Fundador - ${planName}`,
-        value: planName === 'Anual' ? 490 : 49
+        value: PLANS[planName].value,
+        currency: 'BRL'
       });
     }
   };
@@ -56,8 +59,8 @@ export default function PlanoFundador() {
     <div className="fundador-page">
       <Seo
         path="/plano-fundador"
-        title="Plano Fundador — Site Profissional a partir de 99€ | Sublime-se Soluções"
-        description="Site profissional para o seu negócio em Portugal a partir de 99€, com domínio, alojamento, SSL e 4 alterações por mês incluídos. Apenas 5 vagas."
+        title="Plano Fundador — Site Profissional por R$ 140/mês | Sublime-se Soluções"
+        description="Site profissional para seu negócio por R$ 140/mês, com domínio, hospedagem, SSL e 4 alterações por mês incluídos. Pagamento por Pix ou MB WAY. Apenas 5 vagas."
       />
       {/* HEADER */}
       <header className="fundador-header">
@@ -74,9 +77,9 @@ export default function PlanoFundador() {
       <section className="fundador-hero">
         <div className="container">
           <span className="eyebrow">🚀 LANÇAMENTO: PLANO FUNDADOR</span>
-          <h1>Site profissional a partir de <strong>99€</strong>.<br/> Sem surpresas no orçamento.</h1>
+          <h1>Site profissional por <strong>R$ 140/mês</strong>.<br/> Sem surpresas no orçamento.</h1>
           <p className="subtitle">
-            Cansado de orçamentos de 1000€ para um site? No Plano Fundador, criamos a sua presença digital de topo por um valor simbólico de entrada. Depois, apenas paga a manutenção mensal para o mantermos rápido, seguro e atualizado.
+            Cansado de orçamentos de R$ 5.000 por um site? No Plano Fundador, criamos uma presença digital de primeira para seu negócio com uma entrada acessível. Depois, você paga só a mensalidade para mantermos o site rápido, seguro e atualizado.
           </p>
           <div className="hero-cta">
             <a href="#planos" className="btn-primary">Ver Planos e Preços <ChevronRight size={20} /></a>
@@ -87,19 +90,19 @@ export default function PlanoFundador() {
       {/* O QUE INCLUI */}
       <section className="fundador-features">
         <div className="container">
-          <h2>Tudo o que o seu negócio precisa</h2>
+          <h2>Tudo o que seu negócio precisa</h2>
           <div className="features-grid">
             <div className="feature-card">
               <h3>🎨 Design Premium e Rápido</h3>
-              <p>Site desenhado para telemóvel e computador, otimizado para carregar em menos de 2 segundos.</p>
+              <p>Site pensado para celular e computador, otimizado para carregar em menos de 2 segundos.</p>
             </div>
             <div className="feature-card">
-              <h3>🌐 Domínio e Alojamento</h3>
-              <p>Incluímos alojamento rápido e configuração de domínio (.com) para a sua marca.</p>
+              <h3>🌐 Domínio e Hospedagem</h3>
+              <p>Incluímos hospedagem rápida e a configuração do domínio (.com) da sua marca.</p>
             </div>
             <div className="feature-card">
               <h3>🔄 4 Alterações por Mês</h3>
-              <p>Precisa de mudar um preço, texto ou foto? Tem direito a 4 alterações incluídas na mensalidade.</p>
+              <p>Precisa mudar um preço, texto ou foto? Você tem 4 alterações incluídas na mensalidade.</p>
             </div>
             <div className="feature-card">
               <h3>🔒 Segurança e Backups</h3>
@@ -112,12 +115,12 @@ export default function PlanoFundador() {
       {/* PRICING */}
       <section id="planos" className="fundador-pricing">
         <div className="container">
-          <h2>Escolha o seu plano</h2>
-          <p className="pricing-subtitle">Preços bloqueados para os 5 primeiros clientes. Sem surpresas.</p>
-          
+          <h2>Escolha seu plano</h2>
+          <p className="pricing-subtitle">Preço garantido para os 5 primeiros clientes. Sem surpresas.</p>
+
           <div className="pricing-toggle">
             <button className={!isAnnual ? 'active' : ''} onClick={() => setIsAnnual(false)}>Mensal</button>
-            <button className={isAnnual ? 'active' : ''} onClick={() => setIsAnnual(true)}>Anual (2 Meses Oferta)</button>
+            <button className={isAnnual ? 'active' : ''} onClick={() => setIsAnnual(true)}>Anual (2 meses grátis)</button>
           </div>
 
           <div className="pricing-cards">
@@ -126,7 +129,7 @@ export default function PlanoFundador() {
               <div className="card-header">
                 <h3>{plan.title}</h3>
                 <div className="price">
-                  <span className="currency">€</span>
+                  <span className="currency">R$</span>
                   <span className="amount">{plan.amount}</span>
                   <span className="period">{plan.period}</span>
                 </div>
@@ -141,7 +144,7 @@ export default function PlanoFundador() {
               <a href={getWaLink(plan.name)} target="_blank" rel="noopener noreferrer" onClick={() => trackConversion(plan.name)} className="btn-primary">Garantir Vaga {plan.name}</a>
             </div>
           </div>
-          <p className="pricing-note">* A renovação do domínio no ano seguinte tem o custo de 20€ anuais. Alterações não utilizadas não acumulam para o mês seguinte.</p>
+          <p className="pricing-note">* A partir do 2º ano, a renovação do domínio custa R$ 60 por ano. Alterações não usadas não acumulam para o mês seguinte. Pagamento por Pix ou MB WAY.</p>
         </div>
       </section>
       

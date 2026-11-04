@@ -4,7 +4,7 @@ const steps = [
   {
     number: '01',
     title: 'Conversamos',
-    description: 'Entendo o seu negócio, objectivos e o que o seu cliente precisa de ver. Sem formulários genéricos — uma conversa real.',
+    description: 'Entendemos seu negócio, seus objetivos e o que seu cliente precisa ver. Sem formulários genéricos: uma conversa de verdade.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
@@ -13,7 +13,7 @@ const steps = [
   },
   {
     number: '02',
-    title: 'Planeamos',
+    title: 'Planejamos',
     description: 'Definimos a estrutura, o conteúdo e a experiência que o projeto vai ter. Antes de escrever uma linha de código, temos um plano claro.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -25,7 +25,7 @@ const steps = [
   {
     number: '03',
     title: 'Construímos',
-    description: 'Desenvolvemos a solução com foco em qualidade e performance. Partilhamos o progresso ao longo do desenvolvimento para que esteja sempre a par.',
+    description: 'Desenvolvemos a solução com foco em qualidade e performance. Compartilhamos o progresso durante o desenvolvimento para você acompanhar tudo.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <polyline points="16,18 22,12 16,6"/>
@@ -36,7 +36,7 @@ const steps = [
   {
     number: '04',
     title: 'Publicamos',
-    description: 'Colocamos o projeto no ar e fazemos as validações finais — testes de responsividade, performance e funcionalidades — antes da entrega.',
+    description: 'Colocamos o projeto no ar e fazemos as validações finais (responsividade, performance e funcionalidades) antes da entrega.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
@@ -54,7 +54,7 @@ export default function Process() {
           Como funciona
         </h2>
         <p className="process-subtitle">
-          Um processo simples e transparente, do primeiro contacto à entrega do projeto.
+          Um processo simples e transparente, do primeiro contato à entrega do projeto.
         </p>
       </div>
 

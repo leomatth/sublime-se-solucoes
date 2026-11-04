@@ -26,7 +26,7 @@ export default function DashboardModal({ isOpen, onClose, title, image }) {
               <div className="placeholder-chart bar-chart"></div>
               <div className="placeholder-chart pie-chart"></div>
               <div className="placeholder-chart line-chart"></div>
-              <p>O dashboard interactivo seria carregado aqui.</p>
+              <p>O dashboard interativo seria carregado aqui.</p>
             </div>
           )}
         </div>

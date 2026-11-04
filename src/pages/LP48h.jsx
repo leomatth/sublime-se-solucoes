@@ -18,14 +18,14 @@ import imgBikecraft from '../assets/projects/bikecraft.jpg'
 /* ─── CONFIGURAÇÃO DE ALTA CONVERSÃO & URGÊNCIA ─── */
 const CONFIG = {
   wa_number: '351935327289',
-  wa_message: 'Olá! Quero aproveitar a promoção da Landing Page em 48h por 39€ 🚀',
+  wa_message: 'Olá! Quero aproveitar a promoção da Landing Page em 48h por R$ 300.',
   vagas_mes_atual: 'Vagas limitadas', // Removido número fixo para cumprir regras PT
   vagas_proximo_mes: 'Abertas',    
   lps_entregues: 12,        // Total de LPs entregues
-  preco_de: '99€',       
-  preco_por: '39€',      
-  preco_parcelado: 'Pagamento único', // Parcelamento
-  obs_parcelamento: '*sem taxas ou mensalidades',
+  preco_de: 'R$ 500',       
+  preco_por: 'R$ 300',      
+  preco_parcelado: 'Pix ou MB WAY', // Formas de pagamento
+  obs_parcelamento: '*pagamento único, sem taxas ou mensalidades',
 }
 
 const WA_LINK = `https://wa.me/${CONFIG.wa_number}?text=${encodeURIComponent(CONFIG.wa_message)}`
@@ -70,22 +70,22 @@ const problems = [
   {
     icon: '⏳',
     title: 'Agências cobrando caro e pedindo 3 a 4 semanas',
-    desc: 'Não pode esperar 1 mês para começar a vender. O mercado é rápido e o seu negócio precisa de resultados agora.',
+    desc: 'Não pode esperar 1 mês para começar a vender. O mercado é rápido e seu negócio precisa de resultados agora.',
   },
 ]
 
 const includes = [
-  { icon: '🎨', title: 'Design Moderno & Responsivo', desc: 'Mobile-first com visual premium adaptado para carregar instantaneamente em qualquer telemóvel.' },
-  { icon: '✍️', title: 'Copy Persuasiva Incluída', desc: 'Escrevemos os textos focados em conversão. Só nos diz o que vende.' },
+  { icon: '🎨', title: 'Design Moderno & Responsivo', desc: 'Mobile-first com visual premium adaptado para carregar instantaneamente em qualquer celular.' },
+  { icon: '✍️', title: 'Copy Persuasiva Incluída', desc: 'Escrevemos os textos focados em conversão. É só contar o que você vende.' },
   { icon: '💬', title: 'Botão WhatsApp Integrado', desc: 'Com mensagem pré-configurada para o cliente já chegar pronto para fechar negócio.' },
-  { icon: '⚡', title: 'Alta Velocidade & SEO Base', desc: 'Carregamento leve que reduz o custo por clique dos seus anúncios no Meta e Google.' },
-  { icon: '🌐', title: 'Publicação Pronta Online', desc: 'Publicado no seu domínio ou subdomínio exclusivo, pronto para receber visitantes.' },
-  { icon: '🔄', title: '1 Ronda de Ajustes Incluída', desc: 'Apresentação em 24h + refinamento dentro do prazo estrito de 48 horas.' },
+  { icon: '⚡', title: 'Alta Velocidade & SEO Base', desc: 'Carregamento leve que reduz o custo por clique dos seus anúncios no Meta e no Google.' },
+  { icon: '🌐', title: 'Publicação Pronta Online', desc: 'Publicado no seu domínio ou em um subdomínio exclusivo, pronto para receber visitantes.' },
+  { icon: '🔄', title: '1 Rodada de Ajustes Incluída', desc: 'Apresentação em 24h + refinamento dentro do prazo estrito de 48 horas.' },
 ]
 
 const steps = [
-  { num: '01', title: '1. Envia o Briefing Hoje', desc: 'Mande uma mensagem no WhatsApp com seu nicho e proposta. Respondemos em menos de 2 horas para iniciar.' },
-  { num: '02', title: '2. Aprova o Design em 24h', desc: 'Apresentamos a estrutura visual completa e os textos para validação rápida com seus ajustes.' },
+  { num: '01', title: '1. Envie o Briefing Hoje', desc: 'Mande uma mensagem no WhatsApp com seu nicho e proposta. Respondemos em menos de 2 horas para iniciar.' },
+  { num: '02', title: '2. Aprove o Design em 24h', desc: 'Apresentamos a estrutura visual completa e os textos para validação rápida com seus ajustes.' },
   { num: '03', title: '3. LP no Ar em 48 Horas', desc: 'Publicamos o projeto online com domínio, SSL e WhatsApp configurado para receber clientes.' },
 ]
 
@@ -144,7 +144,7 @@ const slideProjects = [
     tag: 'Profissional Liberal',
     title: 'Adriano Advocacia',
     desc: 'Consultoria jurídica e atendimento rápido.',
-    result: '+60 contactos qualificados',
+    result: '+60 contatos qualificados',
     link: '#',
   },
   {
@@ -293,7 +293,7 @@ const testimonials = [
 const faqs = [
   {
     q: 'Como conseguem entregar em apenas 48 horas?',
-    a: 'Nosso fluxo é hiper focado exclusivamente em Landing Pages de 1 página. Eliminamos reuniões desnecessárias, usamos metodologia ágil e templates de alta performance pré-otimizados. Aprova a prévia em 24h e colocamos no ar em 48h.',
+    a: 'Nosso fluxo é hiper focado exclusivamente em Landing Pages de 1 página. Eliminamos reuniões desnecessárias, usamos metodologia ágil e templates de alta performance pré-otimizados. Você aprova a prévia em 24h e colocamos no ar em 48h.',
   },
   {
     q: 'É um site completo ou uma landing page?',
@@ -301,19 +301,19 @@ const faqs = [
   },
   {
     q: 'Preciso ter textos ou imagens prontas?',
-    a: 'Não! Nós cuidamos da redação persuasiva (copywriting) e da seleção de imagens profissionais. Só nos envia informações básicas sobre seu negócio e proposta.',
+    a: 'Não! Nós cuidamos da redação persuasiva (copywriting) e da seleção de imagens profissionais. É só enviar as informações básicas sobre seu negócio e sua proposta.',
   },
   {
-    q: 'Como funciona o pagamento dos 39€?',
-    a: 'O valor de 39€ é o preço promocional único (MBWay ou transferência bancária). Sem mensalidades, sem comissões ou taxas ocultas.',
+    q: 'Como funciona o pagamento dos R$ 300?',
+    a: 'Os R$ 300 são o preço promocional, em pagamento único por Pix ou MB WAY. Sem mensalidades, comissões ou taxas escondidas.',
   },
   {
     q: 'E se eu precisar de alterações depois?',
-    a: 'Tem 1 ciclo completo de revisão incluído antes da entrega final. Além disso, damos 30 dias de suporte e garantia técnica para o site funcionar perfeitamente.',
+    a: 'Você tem 1 ciclo completo de revisão incluído antes da entrega final. Além disso, damos 30 dias de suporte e garantia técnica para o site funcionar perfeitamente.',
   },
   {
     q: 'A landing page fica sendo minha propriedade?',
-    a: 'Sim, 100% sua! O domínio, ficheiros e código pertencem-lhe. Sem contratos de fidelidade ou cobranças recorrentes.',
+    a: 'Sim, 100% sua! O domínio, os arquivos e o código são seus. Sem contratos de fidelidade ou cobranças recorrentes.',
   },
 ]
 
@@ -349,8 +349,8 @@ export default function LP48h() {
       {/* a mesma página serve /lp/48h, /48h e /landing-pages-48h: o canonical aponta para uma só */}
       <Seo
         path="/landing-pages-48h"
-        title="Landing Page em 48h — De 99€ por apenas 39€ | Sublime-se Soluções"
-        description="Landing page profissional pronta em 48 horas, com WhatsApp integrado e design para telemóvel. Para pequenos negócios em Portugal."
+        title="Landing Page em 48h — De R$ 500 por apenas R$ 300 | Sublime-se Soluções"
+        description="Landing page profissional pronta em 48 horas, com WhatsApp integrado e design para celular. Para pequenos negócios no Brasil e em Portugal. Pagamento por Pix ou MB WAY."
       />
 
       {/* ── TOPBAR COM URGÊNCIA REAL & BOTÃO COMPACTO ── */}
@@ -390,13 +390,13 @@ export default function LP48h() {
 
           {/* Headline de Alto Impacto */}
           <h1 id="h48-hero-heading" className="h48-hero-title h48-reveal">
-            A sua Landing Page profissional,<br />
+            Sua Landing Page profissional,<br />
             <span className="h48-accent">pronta em <span className="h48-48">48 horas.</span></span>
           </h1>
 
           <p className="h48-hero-sub h48-reveal">
-            Enquanto pensa se vale a pena, a sua LP já podia estar no ar a gerar contactos.<br />
-            Design moderno, copy persuasiva, botão de WhatsApp integrado — entregue em 2 dias.
+            Enquanto você pensa se vale a pena, sua LP já podia estar no ar gerando contatos.<br />
+            Design moderno, copy persuasiva e botão de WhatsApp integrado, entregue em 2 dias.
           </p>
 
           {/* Preço de Oferta em Destaque no Hero */}
@@ -404,7 +404,7 @@ export default function LP48h() {
             <div className="h48-hero-price-tag">
               <span className="h48-price-de">De {CONFIG.preco_de}</span>
               <span className="h48-price-por">Por apenas <strong>{CONFIG.preco_por}</strong></span>
-              <span className="h48-price-parc">ou {CONFIG.preco_parcelado} <small>{CONFIG.obs_parcelamento}</small></span>
+              <span className="h48-price-parc">{CONFIG.preco_parcelado} <small>{CONFIG.obs_parcelamento}</small></span>
             </div>
           </div>
 
@@ -421,7 +421,7 @@ export default function LP48h() {
 
           {/* Barra de Prova Social com Texto Solicitado */}
           <div className="h48-proof-bar h48-reveal">
-            <div className="h48-avatars" aria-label="Clientes atendidos em Portugal">
+            <div className="h48-avatars" aria-label="Clientes atendidos">
               {['LX', 'PT', 'BG', 'FR', 'CB'].map((l) => (
                 <div key={l} className="h48-avatar">{l}</div>
               ))}
@@ -469,7 +469,7 @@ export default function LP48h() {
             ))}
           </div>
           <div className="h48-bridge h48-reveal">
-            <p>Se se identificou com qualquer uma dessas situações, <strong>uma Landing Page entregue em 48h por 39€ é a solução mais rápida e rentável.</strong></p>
+            <p>Se você se identificou com alguma dessas situações, <strong>uma Landing Page entregue em 48h por R$ 300 é a solução mais rápida e rentável.</strong></p>
           </div>
         </div>
       </section>
@@ -502,7 +502,7 @@ export default function LP48h() {
         <div className="h48-container">
           <div className="h48-reveal">
             <span className="h48-label">Depoimentos & Avaliações</span>
-            <h2 id="h48-test-heading" className="h48-title">Quem contratou, aprovou em Portugal</h2>
+            <h2 id="h48-test-heading" className="h48-title">Quem contratou, aprovou</h2>
           </div>
           <div className="h48-testimonials-grid">
             {testimonials.map((t, i) => (
@@ -566,10 +566,10 @@ export default function LP48h() {
                   </div>
                   <div className="h48-price-highlight">
                     Por apenas <span className="h48-big-price">{CONFIG.preco_por}</span>
-                    <span className="h48-price-type">pagamento único (MBWay)</span>
+                    <span className="h48-price-type">pagamento único</span>
                   </div>
                   <div className="h48-price-installments">
-                    ou <strong>{CONFIG.preco_parcelado}</strong> no cartão <br />
+                    no <strong>{CONFIG.preco_parcelado}</strong><br />
                     <small>{CONFIG.obs_parcelamento}</small>
                   </div>
                 </div>

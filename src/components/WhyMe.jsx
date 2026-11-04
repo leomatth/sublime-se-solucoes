@@ -14,7 +14,7 @@ const reasons = [
   {
     number: '02',
     title: 'Performance real',
-    body: 'Sites rápidos, responsivos e preparados para diferentes dispositivos. A velocidade de carregamento afecta directamente a experiência e os resultados.',
+    body: 'Sites rápidos, responsivos e preparados para diferentes dispositivos. A velocidade de carregamento afeta diretamente a experiência e os resultados.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
@@ -24,7 +24,7 @@ const reasons = [
   {
     number: '03',
     title: 'QA como diferencial',
-    body: 'O nosso background em QA permite olhar para o projeto do ponto de vista de testes, bugs e experiência do utilizador — antes de entregar.',
+    body: 'Nossa experiência em QA permite olhar para o projeto do ponto de vista de testes, bugs e experiência do usuário, antes de entregar.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.66 0 3.21.45 4.54 1.24"/>
@@ -34,7 +34,7 @@ const reasons = [
   {
     number: '04',
     title: 'Desenvolvimento moderno',
-    body: 'Uso tecnologias actuais para criar soluções fáceis de manter, evoluir e escalar conforme o negócio cresce.',
+    body: 'Usamos tecnologias atuais para criar soluções fáceis de manter, evoluir e escalar conforme o negócio cresce.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <polyline points="16,18 22,12 16,6"/>
@@ -53,7 +53,7 @@ export default function WhyMe() {
           Por que trabalhar conosco?
         </h2>
         <p className="why-subtitle">
-          Algumas razões pelas quais empresas escolhem trabalhar com um developer que também conhece QA.
+          Algumas razões pelas quais empresas escolhem trabalhar com quem desenvolve e também testa.
         </p>
       </div>
 

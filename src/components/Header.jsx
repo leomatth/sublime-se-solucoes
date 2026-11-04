@@ -6,7 +6,7 @@ const navLinks = [
   { label: 'Serviços', id: 'services' },
   { label: 'Projetos', id: 'projects' },
   { label: 'Sobre', id: 'about' },
-  { label: 'Contacto', id: 'contact-form' },
+  { label: 'Contato', id: 'contact-form' },
 ]
 
 export default function Header() {
@@ -62,7 +62,7 @@ export default function Header() {
         <button
           className="header-cta btn btn-primary"
           onClick={() => scrollToSection('contact-form')}
-          aria-label="Entrar em contacto"
+          aria-label="Entrar em contato"
         >
           Falar conosco
         </button>

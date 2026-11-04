@@ -54,18 +54,18 @@ export default function About() {
           <span className="section-label">Sobre</span>
 
           <h2 id="about-heading" className="about-title">
-            Transformamos a sua presença digital em resultados
+            Transformamos sua presença digital em resultados
           </h2>
 
           <div className="about-body">
             <p>
-              Nós somos a <strong>Sublime-se Soluções</strong>, uma empresa especialista em soluções digitais que entende que o seu negócio é único e merece brilhar na internet.
+              Somos a <strong>Sublime-se Soluções</strong>, uma empresa especialista em soluções digitais que entende que seu negócio é único e merece brilhar na internet. Atendemos clientes no Brasil e em Portugal.
             </p>
             <p>
-              Do desenvolvimento de sites premium e aplicações exclusivas até à criação de sistemas inteligentes com automação e atendimento via IA, o nosso foco é um só: escalar as suas vendas. Nós estruturamos o seu posicionamento, criamos automações para o seu negócio e impulsionamos o seu Instagram para alcançar quem realmente importa.
+              Do desenvolvimento de sites premium e aplicações exclusivas à criação de sistemas inteligentes com automação e atendimento por IA, nosso foco é um só: aumentar suas vendas. Estruturamos seu posicionamento, criamos automações para seu negócio e impulsionamos seu Instagram para alcançar quem realmente importa.
             </p>
             <p>
-              Não entregamos apenas tecnologia. Entregamos a tranquilidade de saber que o seu negócio funciona de forma inteligente, conectando marcas a pessoas através de experiências digitais memoráveis e focadas na conversão.
+              Não entregamos apenas tecnologia. Entregamos a tranquilidade de saber que seu negócio funciona de forma inteligente, conectando marcas a pessoas com experiências digitais memoráveis e focadas em conversão.
             </p>
           </div>
 
@@ -91,7 +91,7 @@ export default function About() {
               </div>
               <div>
                 <strong>Mobile first</strong>
-                <span>Todos os projetos são testados e optimizados para qualquer dispositivo.</span>
+                <span>Todos os projetos são testados e otimizados para qualquer dispositivo.</span>
               </div>
             </li>
             <li className="about-highlight">
@@ -111,7 +111,7 @@ export default function About() {
             <button
               className="btn btn-primary"
               onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-              aria-label="Entrar em contacto com a Sublime-se Soluções"
+              aria-label="Entrar em contato com a Sublime-se Soluções"
             >
               Falar conosco
             </button>

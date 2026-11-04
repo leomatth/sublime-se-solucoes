@@ -17,12 +17,12 @@ export default function CTASection() {
         <div className="cta-label section-label">Pronto para começar?</div>
 
         <h2 id="cta-heading" className="cta-title">
-          O seu negócio merece mais do que
+          Seu negócio merece mais do que
           um perfil nas redes sociais.
         </h2>
 
         <p className="cta-subtitle">
-          Vamos transformar a presença digital da sua empresa numa experiência
+          Vamos transformar a presença digital da sua empresa em uma experiência
           profissional, rápida e pensada para gerar oportunidades.
         </p>
 
@@ -31,7 +31,7 @@ export default function CTASection() {
             id="cta-primary-btn"
             className="btn btn-primary btn-lg"
             onClick={() => scrollTo('contact-form')}
-            aria-label="Falar sobre o meu projeto"
+            aria-label="Falar sobre meu projeto"
           >
             Quero falar sobre meu projeto
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">

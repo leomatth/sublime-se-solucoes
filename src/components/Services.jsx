@@ -23,7 +23,7 @@ const services = [
       </svg>
     ),
     title: 'Landing Pages',
-    description: 'Páginas focadas em apresentar serviços, gerar contactos, reservas, leads ou vendas. Estruturadas para converter visitantes em clientes.',
+    description: 'Páginas focadas em apresentar serviços, gerar contatos, reservas, leads ou vendas. Estruturadas para converter visitantes em clientes.',
     tags: ['Copywriting', 'Conversão', 'CTA', 'A/B Testing'],
   },
   {
@@ -47,7 +47,7 @@ const services = [
       </svg>
     ),
     title: 'Análise de Dados & Dashboards',
-    description: 'Transformamos dados em decisões. Dashboards interativos (Power BI), implementação de Google Analytics e análise de métricas de marketing para o seu negócio.',
+    description: 'Transformamos dados em decisões. Dashboards interativos (Power BI), implementação de Google Analytics e análise de métricas de marketing para seu negócio.',
     tags: ['Power BI', 'Google Analytics', 'Métricas', 'Leads'],
   },
   {
@@ -59,7 +59,7 @@ const services = [
       </svg>
     ),
     title: 'Performance & SEO',
-    description: 'Experiências rápidas, responsivas e estruturadas para oferecer uma boa experiência ao utilizador e melhorar a presença nos motores de busca.',
+    description: 'Experiências rápidas, responsivas e estruturadas para oferecer uma boa experiência ao usuário e melhorar o posicionamento no Google.',
     tags: ['Core Web Vitals', 'Lighthouse', 'SEO Técnico', 'Acessibilidade'],
   },
   {
@@ -72,7 +72,7 @@ const services = [
       </svg>
     ),
     title: 'QA & Qualidade',
-    description: 'Testes e validações para garantir que o projeto funciona correctamente em diferentes dispositivos, browsers e tamanhos de ecrã.',
+    description: 'Testes e validações para garantir que o projeto funciona corretamente em diferentes dispositivos, navegadores e tamanhos de tela.',
     tags: ['Cross-browser', 'Responsive Testing', 'Functional Testing', 'Bug Reports'],
   },
 ]
@@ -83,10 +83,10 @@ export default function Services() {
       <div className="services-header reveal">
         <span className="section-label">O que nós fazemos</span>
         <h2 id="services-heading" className="services-title">
-          Serviços para o seu negócio
+          Serviços para seu negócio
         </h2>
         <p className="services-subtitle">
-          Desde a primeira impressão até à conversão — cada projeto é pensado para ajudar o seu negócio a crescer online.
+          Da primeira impressão à conversão: cada projeto é pensado para ajudar seu negócio a crescer online.
         </p>
       </div>
 

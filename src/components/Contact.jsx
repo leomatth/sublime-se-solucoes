@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="contact">
       <h2>Vamos Conversar?</h2>
       <p className="contact-subtitle">
-        Escolha o canal que preferir para entrar em contacto conosco
+        Escolha o canal que preferir para entrar em contato com a gente
       </p>
 
       <div className="contact-methods">
@@ -16,7 +16,7 @@ export default function Contact() {
           <span className="contact-link">Enviar Mensagem →</span>
         </a>
 
-        <a href="https://instagram.com/sublimese.oficial" target="_blank" rel="noopener noreferrer" className="contact-card instagram">
+        <a href="https://instagram.com/solucoes.sublimese" target="_blank" rel="noopener noreferrer" className="contact-card instagram">
           <div className="contact-icon">📸</div>
           <h3>Instagram</h3>
           <p>Acompanhe nosso trabalho</p>

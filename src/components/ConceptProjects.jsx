@@ -11,7 +11,7 @@ const concepts = [
     niche: 'Barbearia',
     name: 'Barbearia Urban',
     tagline: 'A arte do corte perfeito',
-    description: 'Website com design sóbrio e masculino, apresentação de serviços com preços, galeria de trabalhos e botão de agendamento directo.',
+    description: 'Website com design sóbrio e masculino, apresentação de serviços com preços, galeria de trabalhos e botão de agendamento direto.',
     image: barbeariaImg,
     color: '#c9a227',
     services: ['Corte Clássico', 'Barba & Bigode', 'Tratamento Capilar'],
@@ -35,7 +35,7 @@ const concepts = [
     niche: 'Personal Trainer',
     name: 'João Silva Personal',
     tagline: 'Resultados reais. Método comprovado.',
-    description: 'Landing page de alto impacto para personal trainer, com apresentação do método, serviços, pacotes e formulário de contacto.',
+    description: 'Landing page de alto impacto para personal trainer, com apresentação do método, serviços, pacotes e formulário de contato.',
     image: personalImg,
     color: '#22c55e',
     services: ['Treino Presencial', 'Online Coaching', 'Avaliação Física'],
@@ -47,7 +47,7 @@ const concepts = [
     niche: 'Marketing & Vendas',
     name: 'Marketing Analytics Pro',
     tagline: 'Conversões e Leads em tempo real',
-    description: 'Dashboard interativo para agências e equipas de marketing monitorizarem campanhas, ROI, custo por lead e tráfego.',
+    description: 'Dashboard interativo para agências e equipes de marketing monitorarem campanhas, ROI, custo por lead e tráfego.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
     color: '#3b82f6',
     services: ['Análise de Leads', 'ROI de Campanhas', 'Tráfego Web'],
@@ -101,7 +101,7 @@ export default function ConceptProjects() {
           Conceitos e Dashboards
         </h2>
         <p className="concepts-subtitle">
-          O seu negócio pode ter uma presença digital e inteligência de dados exactamente assim. 
+          Seu negócio pode ter uma presença digital e inteligência de dados exatamente assim. 
           Estes são projetos demonstrativos criados para mostrar o que é possível.
         </p>
         <div className="concepts-disclaimer" role="note" aria-label="Aviso sobre projetos demonstrativos">

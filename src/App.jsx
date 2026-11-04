@@ -43,7 +43,7 @@ function HomePage() {
       <Seo
         path="/"
         title="Criação de Websites e Landing Pages no Brasil e em Portugal · Sublime-se"
-        description="Criação de websites profissionais, landing pages e aplicações web para empresas no Brasil e em Portugal. Design moderno, rápido e focado em resultados. Fale connosco."
+        description="Criação de websites profissionais, landing pages e aplicações web para empresas no Brasil e em Portugal. Design moderno, rápido e focado em resultados. Fale com a gente."
       />
       <Header />
       <main>

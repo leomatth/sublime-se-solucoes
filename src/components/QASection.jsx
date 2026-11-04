@@ -1,11 +1,11 @@
 import './QASection.css'
 
 const checks = [
-  { label: 'Responsive Design', detail: 'Funciona em todos os tamanhos de ecrã' },
+  { label: 'Responsive Design', detail: 'Funciona em todos os tamanhos de tela' },
   { label: 'Cross-browser', detail: 'Testado em Chrome, Firefox, Safari e Edge' },
-  { label: 'Performance', detail: 'Carregamento optimizado para velocidade' },
-  { label: 'Acessibilidade', detail: 'Navegação por teclado e leitores de ecrã' },
-  { label: 'Functional Testing', detail: 'Formulários, links e interacções validados' },
+  { label: 'Performance', detail: 'Carregamento otimizado para velocidade' },
+  { label: 'Acessibilidade', detail: 'Navegação por teclado e leitores de tela' },
+  { label: 'Functional Testing', detail: 'Formulários, links e interações validados' },
 ]
 
 export default function QASection() {
@@ -19,13 +19,13 @@ export default function QASection() {
             Além de desenvolver,<br />nós testamos.
           </h2>
           <p className="qa-body">
-            O nosso background em QA significa que cada projeto passa por validações
-            antes de ser entregue. Não apenas "parece bom no nosso ecrã" — funciona
-            correctamente para todos os seus utilizadores.
+            Nossa experiência em QA significa que cada projeto passa por validações
+            antes de ser entregue. Não basta "parecer bom na nossa tela": ele funciona
+            corretamente para todos os seus usuários.
           </p>
           <p className="qa-body">
             Testes funcionais, validação de responsividade, compatibilidade entre
-            browsers e auditoria de performance fazem parte do processo padrão.
+            navegadores e auditoria de performance fazem parte do processo padrão.
           </p>
 
           <div className="qa-tools" aria-label="Ferramentas de QA">

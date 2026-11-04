@@ -45,7 +45,7 @@ export default function ContactForm() {
         setTimeout(() => setSubmitted(false), 5000)
       })
       .catch(() => {
-        setError('Ocorreu um erro ao enviar. Por favor tente novamente ou envie um email directo.')
+        setError('Não foi possível enviar. Tente novamente ou mande um e-mail direto.')
       })
       .finally(() => setLoading(false))
   }
@@ -55,16 +55,16 @@ export default function ContactForm() {
       <div className="contact-form-layout">
         {/* Left: intro */}
         <div className="form-intro reveal">
-          <span className="section-label">Contacto</span>
+          <span className="section-label">Contato</span>
           <h2 id="contact-form-heading" className="form-intro-title">
-            Vamos falar sobre o seu projeto
+            Vamos falar sobre seu projeto
           </h2>
           <p className="form-intro-body">
-            Tem um negócio e precisa de um website profissional? Preencha o formulário e
-            entramos em contacto em menos de 24 horas.
+            Tem um negócio e precisa de um site profissional? Preencha o formulário e
+            entramos em contato em menos de 24 horas.
           </p>
 
-          <div className="form-direct-contacts" aria-label="Contactos directos">
+          <div className="form-direct-contacts" aria-label="Contatos diretos">
             <a
               href="mailto:diretoria@solucoes.sublime-se.com"
               className="direct-contact-item"
@@ -82,7 +82,7 @@ export default function ContactForm() {
             </a>
 
             <a
-              href="https://instagram.com/sublimese.oficial"
+              href="https://instagram.com/solucoes.sublimese"
               target="_blank"
               rel="noopener noreferrer"
               className="direct-contact-item"
@@ -95,7 +95,7 @@ export default function ContactForm() {
               </div>
               <div>
                 <span className="direct-contact-label">Instagram</span>
-                <span className="direct-contact-value">sublimese.oficial</span>
+                <span className="direct-contact-value">solucoes.sublimese</span>
               </div>
             </a>
 
@@ -129,7 +129,7 @@ export default function ContactForm() {
                 </svg>
               </div>
               <h3>Mensagem enviada!</h3>
-              <p>Obrigado pelo contacto. Entraremos em contacto em breve.</p>
+              <p>Obrigado pela mensagem. Vamos entrar em contato em breve.</p>
             </div>
           ) : (
             <form
@@ -137,7 +137,7 @@ export default function ContactForm() {
               className="contact-form"
               onSubmit={handleSubmit}
               noValidate
-              aria-label="Formulário de contacto"
+              aria-label="Formulário de contato"
             >
               <div className="form-field">
                 <label htmlFor="cf-name" className="form-label">
@@ -150,7 +150,7 @@ export default function ContactForm() {
                   value={formData.firstName}
                   onChange={handleChange}
                   required
-                  placeholder="O seu nome"
+                  placeholder="Seu nome"
                   autoComplete="given-name"
                   aria-required="true"
                 />
@@ -167,7 +167,7 @@ export default function ContactForm() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="o.seu@email.com"
+                  placeholder="seu@email.com"
                   autoComplete="email"
                   aria-required="true"
                 />
@@ -198,7 +198,7 @@ export default function ContactForm() {
                   value={formData.projectDescription}
                   onChange={handleChange}
                   required
-                  placeholder="Conte-nos sobre o seu negócio e o que precisa..."
+                  placeholder="Conte sobre seu negócio e o que você precisa..."
                   rows={5}
                   aria-required="true"
                 />
@@ -219,18 +219,18 @@ export default function ContactForm() {
                 id="contact-submit-btn"
                 className="btn btn-primary btn-lg form-submit"
                 disabled={loading}
-                aria-label={loading ? 'A enviar mensagem...' : 'Enviar pedido de contacto'}
+                aria-label={loading ? 'Enviando mensagem...' : 'Enviar pedido de contato'}
               >
                 {loading ? (
                   <>
                     <span className="btn-spinner" aria-hidden="true"></span>
-                    A enviar...
+                    Enviando...
                   </>
                 ) : 'Enviar pedido'}
               </button>
 
               <p className="form-note">
-                Respondemos em menos de 24 horas. Os seus dados são usados apenas para responder ao seu pedido.
+                Respondemos em menos de 24 horas. Seus dados são usados apenas para responder ao seu pedido.
               </p>
             </form>
           )}

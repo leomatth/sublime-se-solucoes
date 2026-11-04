@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Seo from '../components/Seo'
 import '../landing/LandingPage.css'
 
-const WA_LINK = 'https://wa.me/351935327289?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Sublime-se%20Solu%C3%A7%C3%B5es%20e%20quero%20saber%20mais%20sobre%20criar%20um%20site%20profissional%20para%20o%20meu%20neg%C3%B3cio.'
+const WA_LINK = 'https://wa.me/351935327289?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Sublime-se%20Solu%C3%A7%C3%B5es%20e%20quero%20saber%20mais%20sobre%20criar%20um%20site%20profissional%20para%20meu%20neg%C3%B3cio.'
 
 const WhatsAppIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -25,34 +25,34 @@ const problems = [
   {
     emoji: '📱',
     title: 'Responde preços pelo WhatsApp manualmente',
-    desc: 'Todos os dias, as mesmas perguntas. Horários, preços, serviços. O seu tempo vale mais do que isso.',
+    desc: 'Todos os dias, as mesmas perguntas. Horários, preços, serviços. Seu tempo vale mais do que isso.',
   },
   {
     emoji: '😰',
     title: 'Parece menos profissional do que é',
-    desc: 'O seu serviço é excelente — mas quem vê só o perfil do Instagram pode não perceber isso.',
+    desc: 'Seu serviço é excelente, mas quem vê só o perfil do Instagram pode não perceber isso.',
   },
 ]
 
 const deliverables = [
   { icon: '🌐', title: 'Site Profissional', desc: 'Design moderno, rápido e adaptado ao seu negócio.' },
-  { icon: '💬', title: 'WhatsApp Integrado', desc: 'Botão direto para o WhatsApp em cada página. Mais contactos, menos esforço.' },
+  { icon: '💬', title: 'WhatsApp Integrado', desc: 'Botão direto para o WhatsApp em cada página. Mais contatos, menos esforço.' },
   { icon: '🖼️', title: 'Galeria de Serviços', desc: 'Fotos e descrições dos seus serviços ou produtos em destaque.' },
-  { icon: '📍', title: 'Google Maps', desc: 'O cliente sabe onde encontrá-lo. Essencial para negócios locais.' },
-  { icon: '🔍', title: 'SEO Local', desc: 'Apareça quando alguém pesquisar o seu tipo de negócio na sua cidade.' },
-  { icon: '⚡', title: 'Entrega em 7 dias', desc: 'Não espera meses. Em uma semana, o seu site está no ar.' },
+  { icon: '📍', title: 'Google Maps', desc: 'O cliente sabe onde encontrar você. Essencial para negócios locais.' },
+  { icon: '🔍', title: 'SEO Local', desc: 'Apareça quando alguém pesquisar seu tipo de negócio na sua cidade.' },
+  { icon: '⚡', title: 'Entrega em 7 dias', desc: 'Nada de esperar meses. Em uma semana, seu site está no ar.' },
 ]
 
 const steps = [
-  { num: '01', title: 'Fale connosco', desc: 'Mande mensagem agora. Respondemos em menos de 2 horas.' },
-  { num: '02', title: 'Proposta em 24h', desc: 'Analisamos o seu negócio e enviamos uma proposta personalizada e sem compromisso.' },
+  { num: '01', title: 'Fale com a gente', desc: 'Mande mensagem agora. Respondemos em menos de 2 horas.' },
+  { num: '02', title: 'Proposta em 24h', desc: 'Analisamos seu negócio e enviamos uma proposta personalizada e sem compromisso.' },
   { num: '03', title: 'Site no ar em 7 dias', desc: 'Cuidamos de tudo: design, textos, domínio e publicação.' },
 ]
 
 const faqs = [
   {
     q: 'Preciso saber de tecnologia?',
-    a: 'Não. Conta-nos sobre o seu negócio e nós tratamos de tudo: design, textos, publicação e configuração técnica.',
+    a: 'Não. Conte sobre seu negócio e nós cuidamos de tudo: design, textos, publicação e configuração técnica.',
   },
   {
     q: 'Quanto tempo demora?',
@@ -60,14 +60,14 @@ const faqs = [
   },
   {
     q: 'Preciso assinar algum contrato?',
-    a: 'Não. A consulta é gratuita e sem compromisso. Só avançamos se fizer sentido para si.',
+    a: 'Não. A consulta é gratuita e sem compromisso. Só seguimos se fizer sentido para você.',
   },
   {
     q: 'O site fica sendo meu?',
-    a: 'Sim, 100%. Depois de entregue, o site é seu e pode fazer o que quiser com ele.',
+    a: 'Sim, 100%. Depois de entregue, o site é seu e você pode fazer o que quiser com ele.',
   },
   {
-    q: 'Funciona para o meu tipo de negócio?',
+    q: 'Funciona para meu tipo de negócio?',
     a: 'Criamos sites para salões, clínicas, restaurantes, barbearias, prestadores de serviço, lojas e muito mais.',
   },
 ]
@@ -89,7 +89,7 @@ export default function LandingPage() {
     <div className="lp-root">
       <Seo
         path="/lp"
-        title="Sites para Pequenos Negócios Locais em Portugal · Sublime-se"
+        title="Sites para Pequenos Negócios Locais no Brasil e em Portugal · Sublime-se"
         description="Criamos o site da sua empresa em menos de 7 dias, com WhatsApp integrado, galeria de serviços e Google Maps, pronto para atrair e converter clientes."
       />
 
@@ -111,16 +111,16 @@ export default function LandingPage() {
           <div className="lp-hero-inner">
             <span className="lp-eyebrow">✦ Sites para Pequenos Negócios Locais</span>
             <h1 id="lp-hero-heading" className="lp-hero-title">
-              O seu negócio perde clientes<br />
+              Seu negócio perde clientes<br />
               <span className="lp-highlight">todos os dias</span> por não ter<br />
               um site profissional.
             </h1>
             <p className="lp-hero-sub">
-              Em menos de 7 dias, criamos o site da sua empresa com WhatsApp integrado, galeria de serviços e Google Maps — tudo pronto para atrair e converter clientes.
+              Em menos de 7 dias, criamos o site da sua empresa com WhatsApp integrado, galeria de serviços e Google Maps, tudo pronto para atrair e converter clientes.
             </p>
             <div className="lp-hero-ctas">
               <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="lp-btn-wa lp-btn-lg" id="lp-hero-cta">
-                <WhatsAppIcon /> Quero o meu site agora
+                <WhatsAppIcon /> Quero meu site agora
               </a>
               <p className="lp-hero-trust">🔒 Orçamento gratuito · Sem compromisso · Resposta em 2h</p>
             </div>
@@ -143,7 +143,7 @@ export default function LandingPage() {
           <div className="lp-reveal">
             <span className="lp-section-label">O problema</span>
             <h2 id="lp-problems-heading" className="lp-section-title">
-              Reconhece alguma destas situações?
+              Você se reconhece em alguma dessas situações?
             </h2>
           </div>
           <div className="lp-problems-grid">
@@ -156,7 +156,7 @@ export default function LandingPage() {
             ))}
           </div>
           <div className="lp-problem-bridge lp-reveal">
-            <p>Se se identificou com pelo menos uma dessas situações, <strong>um site profissional é o próximo passo para o seu negócio crescer.</strong></p>
+            <p>Se você se identificou com pelo menos uma dessas situações, <strong>um site profissional é o próximo passo para seu negócio crescer.</strong></p>
           </div>
         </div>
       </section>
@@ -167,7 +167,7 @@ export default function LandingPage() {
           <div className="lp-reveal">
             <span className="lp-section-label">A solução</span>
             <h2 id="lp-solution-heading" className="lp-section-title">
-              Tudo o que o seu negócio precisa,<br />entregue em 7 dias
+              Tudo o que seu negócio precisa,<br />entregue em 7 dias
             </h2>
           </div>
           <div className="lp-deliverables-grid">
@@ -282,20 +282,20 @@ export default function LandingPage() {
             </div>
 
             <p className="lp-offer-sub">
-              Não sabe ainda o que precisa? Peça uma <strong>análise gratuita</strong> do seu negócio — identificamos o que falta e enviamos uma proposta personalizada em 24 horas, sem compromisso.
+              Não sabe ainda o que precisa? Peça uma <strong>análise gratuita</strong> do seu negócio: identificamos o que falta e enviamos uma proposta personalizada em 24 horas, sem compromisso.
             </p>
             <ul className="lp-offer-checklist" aria-label="Garantias">
               {[
                 'Orçamento gratuito e sem compromisso',
-                'Proposta personalizada para o seu negócio',
-                'Transparência total — sem surpresas no preço',
+                'Proposta personalizada para seu negócio',
+                'Transparência total, sem surpresas no preço',
                 'Resposta garantida em até 2 horas',
               ].map((item) => (
                 <li key={item}><CheckIcon /> {item}</li>
               ))}
             </ul>
             <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="lp-btn-wa lp-btn-xl" id="lp-offer-cta">
-              <WhatsAppIcon /> Quero a minha consulta gratuita
+              <WhatsAppIcon /> Quero minha consulta gratuita
             </a>
             <p className="lp-offer-note">🔒 Os seus dados são usados apenas para responder ao seu pedido.</p>
           </div>
