@@ -18,6 +18,9 @@ import LandingPage from './pages/LandingPage'
 import LP48h from './pages/LP48h'
 import PlanoFundador from './pages/PlanoFundador'
 import Apresentacao from './pages/Apresentacao'
+import Privacidade from './pages/Privacidade'
+import Termos from './pages/Termos'
+import SiteShell from './components/SiteShell'
 
 function HomePage() {
   useEffect(() => {
@@ -64,14 +67,22 @@ function HomePage() {
 }
 
 export const routes = [
-  { path: "/", element: <HomePage /> },
-  { path: "/lp", element: <LandingPage /> },
-  { path: "/lp/48h", element: <LP48h /> },
-  { path: "/48h", element: <LP48h /> },
-  { path: "/landing-pages-48h", element: <LP48h /> },
-  { path: "/plano-fundador", element: <PlanoFundador /> },
-  { path: "/apresentacao", element: <Apresentacao /> },
-  { path: "*", element: <Navigate to="/" replace /> }
+  {
+    path: "/",
+    element: <SiteShell />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "lp", element: <LandingPage /> },
+      { path: "lp/48h", element: <LP48h /> },
+      { path: "48h", element: <LP48h /> },
+      { path: "landing-pages-48h", element: <LP48h /> },
+      { path: "plano-fundador", element: <PlanoFundador /> },
+      { path: "apresentacao", element: <Apresentacao /> },
+      { path: "privacidade", element: <Privacidade /> },
+      { path: "termos", element: <Termos /> },
+      { path: "*", element: <Navigate to="/" replace /> },
+    ],
+  },
 ];
 
 function App() {

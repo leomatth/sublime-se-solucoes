@@ -319,3 +319,7 @@
     font-size: 2.5rem;
   }
 }
+
+.fundador-footer a {
+  color: inherit;
+}

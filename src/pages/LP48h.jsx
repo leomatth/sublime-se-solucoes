@@ -617,7 +617,8 @@ export default function LP48h() {
           <img src="/logo.png" alt="Sublime-se Soluções" className="h48-footer-logo" loading="lazy" />
           <p className="h48-footer-text">
             © {new Date().getFullYear()} Sublime-se Soluções ·{' '}
-            <a href="mailto:diretoria@solucoes.sublime-se.com">diretoria@solucoes.sublime-se.com</a>
+            <a href="mailto:diretoria@solucoes.sublime-se.com">diretoria@solucoes.sublime-se.com</a> ·{' '}
+            <a href="/privacidade">Privacidade</a> · <a href="/termos">Termos</a>
           </p>
           <a href="/" className="h48-footer-link">Ver Site Institucional Completo →</a>
         </div>

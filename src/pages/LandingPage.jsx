@@ -338,7 +338,7 @@ export default function LandingPage() {
         <div className="lp-container">
           <img src="/logo.png" alt="Sublime-se Soluções" className="lp-footer-logo" />
           <p className="lp-footer-text">
-            © {new Date().getFullYear()} Sublime-se Soluções · <a href="mailto:diretoria@solucoes.sublime-se.com">diretoria@solucoes.sublime-se.com</a>
+            © {new Date().getFullYear()} Sublime-se Soluções · <a href="mailto:diretoria@solucoes.sublime-se.com">diretoria@solucoes.sublime-se.com</a> · <a href="/privacidade">Privacidade</a> · <a href="/termos">Termos</a>
           </p>
           <a href="/" className="lp-footer-link">Ver site completo →</a>
         </div>

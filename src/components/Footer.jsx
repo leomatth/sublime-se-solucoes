@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const currentYear = new Date().getFullYear()
@@ -111,7 +112,7 @@ export default function Footer() {
             &copy; {currentYear} Sublime-se Soluções. Todos os direitos reservados.
           </p>
           <p className="footer-made">
-            Feito com React &amp; CSS Vanilla
+            <Link to="/privacidade">Privacidade</Link> · <Link to="/termos">Termos de serviço</Link>
           </p>
         </div>
       </div>

@@ -151,7 +151,7 @@ export default function PlanoFundador() {
       {/* FOOTER */}
       <footer className="fundador-footer">
         <div className="container">
-          <p>© {new Date().getFullYear()} Sublime-se Soluções</p>
+          <p>© {new Date().getFullYear()} Sublime-se Soluções · <a href="/privacidade">Privacidade</a> · <a href="/termos">Termos</a></p>
         </div>
       </footer>
     </div>

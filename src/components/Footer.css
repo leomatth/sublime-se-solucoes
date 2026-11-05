@@ -167,3 +167,14 @@
     padding: var(--space-8) var(--space-5);
   }
 }
+
+.footer-made a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-made a:hover,
+.footer-made a:focus-visible {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
