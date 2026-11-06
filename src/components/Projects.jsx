@@ -2,6 +2,8 @@ import { useState, useCallback } from 'react'
 import CoverflowGallery from './CoverflowGallery'
 import './Projects.css'
 
+import imgSolucoesHub from '../assets/projects/solucoes_hub.jpg'
+import imgRenataSansill from '../assets/projects/renata_sansill.jpg'
 import imgIguia from '../assets/projects/iguia.jpg'
 import imgYgorNutri from '../assets/projects/ygor_nutri.jpg'
 
@@ -16,6 +18,8 @@ import imgVioletribute from '../assets/projects/violetribute.jpg'
 import imgMendozaWine from '../assets/projects/mendoza_wine.jpg'
 
 const images = {
+  'solucoes-hub': imgSolucoesHub,
+  'renata-sansill': imgRenataSansill,
   'iguia': imgIguia,
   'ygor-nutri': imgYgorNutri,
   'inova-digital': imgInovaDigital,
@@ -30,6 +34,30 @@ const images = {
 }
 
 const projects = [
+  {
+    id: 'solucoes-hub',
+    category: 'Plataforma / Atendimento com IA',
+    title: 'Soluções Hub',
+    problem: 'Pequenos negócios perdem clientes porque não conseguem responder todas as mensagens do Instagram a tempo, nem acompanhar quem virou venda.',
+    solution: 'Painel próprio com inbox do Instagram, IA treinada com o contexto de cada negócio respondendo no direct, palavras-chave que viram mensagem automática a partir dos comentários, funil de leads e métricas do perfil.',
+    tags: ['IA', 'Instagram', 'CRM', 'Dashboard'],
+    link: null,
+    demo: null,
+    color: '#f5b52e',
+    gradient: 'linear-gradient(135deg, #031424 0%, #072338 50%, #020d18 100%)',
+  },
+  {
+    id: 'renata-sansill',
+    category: 'Site / Estética',
+    title: 'Studio Renata Sansill',
+    problem: 'Estúdio de estética avançada em Maricá, com mais de 20 anos de experiência, recebia as clientes só pelo Instagram e não tinha onde apresentar os protocolos.',
+    solution: 'Site com identidade própria derivada da marca, vídeos reais dos tratamentos, demonstração da LED terapia e atalhos que levam direto ao WhatsApp com a mensagem pronta.',
+    tags: ['Next.js', 'Site', 'Estética', 'WhatsApp'],
+    link: null,
+    demo: null,
+    color: '#d9a99a',
+    gradient: 'linear-gradient(135deg, #2a0c17 0%, #45152a 50%, #1f0810 100%)',
+  },
   {
     id: 'iguia',
     category: 'Site Institucional',
